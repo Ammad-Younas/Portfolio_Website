@@ -24,9 +24,6 @@
             </div>
 
             <nav id="site-navigation" class="main-navigation" style="display: flex; align-items: center; gap: 20px;">
-                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Light/Dark Mode" style="background: none; border: none; color: #fff; font-size: 1.2rem; cursor: pointer; transition: color 0.3s;">
-                    <i class="fa-solid fa-sun"></i>
-                </button>
                 <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
                     <i class="fa-solid fa-bars"></i>
                 </button>
@@ -36,6 +33,11 @@
                         <li><a href="#about">About</a></li>
                         <li><a href="#skills">Skills</a></li>
                         <li><a href="#projects">Projects</a></li>
+                        <li>
+                            <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Light/Dark Mode" style="background: none; border: none; font-size: 1.2rem; cursor: pointer; transition: color 0.3s; padding: 0;">
+                                <i class="fa-solid fa-sun"></i>
+                            </button>
+                        </li>
                         <li><a href="#contact" class="btn-primary-nav">Contact Me</a></li>
                     </ul>
                 </div>
