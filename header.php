@@ -4,6 +4,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<link rel="icon" href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/favicon.png" type="image/png">
 
 	<?php wp_head(); ?>
 </head>
@@ -22,7 +23,10 @@
                 </a>
             </div>
 
-            <nav id="site-navigation" class="main-navigation">
+            <nav id="site-navigation" class="main-navigation" style="display: flex; align-items: center; gap: 20px;">
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Light/Dark Mode" style="background: none; border: none; color: #fff; font-size: 1.2rem; cursor: pointer; transition: color 0.3s;">
+                    <i class="fa-solid fa-sun"></i>
+                </button>
                 <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
                     <i class="fa-solid fa-bars"></i>
                 </button>

@@ -21,6 +21,7 @@ get_header();
                     <div class="hero-actions">
                         <a href="#projects" class="btn btn-primary">View My Work <i class="fa-solid fa-arrow-right"></i></a>
                         <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                        <a href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/cv.pdf" target="_blank" class="btn btn-secondary"><i class="fa-solid fa-download"></i> Download CV</a>
                     </div>
                 </div>
             </div>
@@ -117,7 +118,10 @@ get_header();
                                 <span>Tkinter</span>
                                 <span>GUI</span>
                             </div>
-                            <a href="https://github.com/Ammad-Younas/QR_Generator" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> View Repository</a>
+                            <div class="project-links" style="display: flex; gap: 15px; flex-wrap: wrap;">
+                                <a href="https://github.com/Ammad-Younas/QR_Generator" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> View Repository</a>
+                                <a href="#" target="_blank" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> See Live</a>
+                            </div>
                         </div>
                     </div>
 
@@ -131,7 +135,10 @@ get_header();
                                 <span>DFS</span>
                                 <span>Data Structures</span>
                             </div>
-                            <a href="https://github.com/Ammad-Younas/Maze_Generator_and_Solver_Using_DFS" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> View Repository</a>
+                            <div class="project-links" style="display: flex; gap: 15px; flex-wrap: wrap;">
+                                <a href="https://github.com/Ammad-Younas/Maze_Generator_and_Solver_Using_DFS" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> View Repository</a>
+                                <a href="#" target="_blank" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> See Live</a>
+                            </div>
                         </div>
                     </div>
 
@@ -145,7 +152,10 @@ get_header();
                                 <span>Security</span>
                                 <span>Tool</span>
                             </div>
-                            <a href="https://github.com/Ammad-Younas/Password_Generator" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> View Repository</a>
+                            <div class="project-links" style="display: flex; gap: 15px; flex-wrap: wrap;">
+                                <a href="https://github.com/Ammad-Younas/Password_Generator" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> View Repository</a>
+                                <a href="#" target="_blank" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> See Live</a>
+                            </div>
                         </div>
                     </div>
                     
@@ -158,7 +168,10 @@ get_header();
                                 <span>Python</span>
                                 <span>Automation</span>
                             </div>
-                            <a href="https://github.com/Ammad-Younas/Cursor_Coordinates_Captcher" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> View Repository</a>
+                            <div class="project-links" style="display: flex; gap: 15px; flex-wrap: wrap;">
+                                <a href="https://github.com/Ammad-Younas/Cursor_Coordinates_Captcher" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> View Repository</a>
+                                <a href="#" target="_blank" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> See Live</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -175,7 +188,28 @@ get_header();
                     <p class="contact-subtitle mt-3">I'm currently looking for new opportunities. My inbox is always open.</p>
                 </div>
 
-                <div class="contact-container animate-fade-up">
+                <div class="contact-container animate-fade-up grid-2-col" style="max-width: 1000px;">
+                    <div class="contact-form-wrapper glass-card">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="contact-name">Name</label>
+                                <input type="text" id="contact-name" name="name" required placeholder="Your Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email">Email</label>
+                                <input type="email" id="contact-email" name="email" required placeholder="Your Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-message">Message</label>
+                                <textarea id="contact-message" name="message" required rows="4" placeholder="Your Message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100 mt-3" id="submit-btn" style="width: 100%;">
+                                <span class="btn-text">Send Message <i class="fa-solid fa-paper-plane"></i></span>
+                            </button>
+                            <div id="form-messages" class="mt-3"></div>
+                        </form>
+                    </div>
+
                     <div class="contact-info glass-card">
                         <div class="contact-item">
                             <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>

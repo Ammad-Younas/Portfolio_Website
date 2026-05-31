@@ -1,4 +1,33 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Theme Toggle Logic
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const themeIcon = themeToggleBtn ? themeToggleBtn.querySelector('i') : null;
+
+    if (themeToggleBtn && themeIcon) {
+        // Check for saved theme
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'light') {
+            document.body.classList.add('light-mode');
+            themeIcon.classList.remove('fa-sun');
+            themeIcon.classList.add('fa-moon');
+        }
+
+        themeToggleBtn.addEventListener('click', () => {
+            document.body.classList.toggle('light-mode');
+            const isLight = document.body.classList.contains('light-mode');
+            
+            if (isLight) {
+                localStorage.setItem('theme', 'light');
+                themeIcon.classList.remove('fa-sun');
+                themeIcon.classList.add('fa-moon');
+            } else {
+                localStorage.setItem('theme', 'dark');
+                themeIcon.classList.remove('fa-moon');
+                themeIcon.classList.add('fa-sun');
+            }
+        });
+    }
+
     // Mobile Menu Toggle
     const menuToggle = document.querySelector('.menu-toggle');
     const menuContainer = document.querySelector('.menu-container');
@@ -84,4 +113,51 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // Contact Form AJAX Submission
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const submitBtn = document.getElementById('submit-btn');
+            const formMessages = document.getElementById('form-messages');
+            const originalBtnText = submitBtn.innerHTML;
+            
+            // Show loading state
+            submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
+            submitBtn.disabled = true;
+            formMessages.innerHTML = '';
+            formMessages.className = 'mt-3 form-message';
+            
+            const formData = new FormData(this);
+            formData.append('action', 'submit_contact_form');
+            
+            fetch(portfolio_ajax.ajax_url, {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                submitBtn.innerHTML = originalBtnText;
+                submitBtn.disabled = false;
+                
+                if (data.success) {
+                    formMessages.classList.add('success');
+                    formMessages.innerHTML = data.data.message || 'Message sent successfully!';
+                    contactForm.reset();
+                } else {
+                    formMessages.classList.add('error');
+                    formMessages.innerHTML = data.data.message || 'An error occurred. Please try again.';
+                }
+            })
+            .catch(error => {
+                console.error(error);
+                submitBtn.innerHTML = originalBtnText;
+                submitBtn.disabled = false;
+                formMessages.classList.add('error');
+                formMessages.innerHTML = 'A network error occurred. Please try again.';
+            });
+        });
+    }
 });

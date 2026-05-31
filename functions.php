@@ -53,5 +53,41 @@ function ammad_portfolio_scripts() {
 
 	// Custom JS
 	wp_enqueue_script( 'ammad-portfolio-main-js', get_template_directory_uri() . '/assets/js/main.js', array(), filemtime( get_template_directory() . '/assets/js/main.js' ), true );
+
+    // Localize script for AJAX
+    wp_localize_script( 'ammad-portfolio-main-js', 'portfolio_ajax', array(
+        'ajax_url' => admin_url( 'admin-ajax.php' )
+    ) );
 }
 add_action( 'wp_enqueue_scripts', 'ammad_portfolio_scripts' );
+
+// Contact Form AJAX Handler
+function submit_contact_form() {
+    // Sanitize input
+    $name = isset( $_POST['name'] ) ? sanitize_text_field( wp_unslash( $_POST['name'] ) ) : '';
+    $email = isset( $_POST['email'] ) ? sanitize_email( wp_unslash( $_POST['email'] ) ) : '';
+    $message = isset( $_POST['message'] ) ? sanitize_textarea_field( wp_unslash( $_POST['message'] ) ) : '';
+
+    if ( empty( $name ) || empty( $email ) || empty( $message ) ) {
+        wp_send_json_error( array( 'message' => 'Please fill in all fields.' ) );
+    }
+
+    if ( ! is_email( $email ) ) {
+        wp_send_json_error( array( 'message' => 'Please provide a valid email address.' ) );
+    }
+
+    $to = get_option( 'admin_email' );
+    $subject = 'New Contact Form Submission from ' . $name;
+    $body = "Name: $name\nEmail: $email\n\nMessage:\n$message";
+    $headers = array( 'Reply-To: ' . $name . ' <' . $email . '>' );
+
+    $sent = wp_mail( $to, $subject, $body, $headers );
+
+    if ( $sent ) {
+        wp_send_json_success( array( 'message' => 'Thank you! Your message has been sent.' ) );
+    } else {
+        wp_send_json_error( array( 'message' => 'Failed to send message. Please try again later.' ) );
+    }
+}
+add_action( 'wp_ajax_submit_contact_form', 'submit_contact_form' );
+add_action( 'wp_ajax_nopriv_submit_contact_form', 'submit_contact_form' );
