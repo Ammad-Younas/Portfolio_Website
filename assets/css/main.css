@@ -710,6 +710,12 @@ ul {
     box-sizing: border-box;
 }
 
+.form-group textarea {
+    resize: none;
+    min-height: 120px;
+}
+
+
 body.light-mode .form-group input,
 body.light-mode .form-group textarea {
     background: rgba(255, 255, 255, 0.5);
