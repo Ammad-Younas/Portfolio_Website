@@ -12,7 +12,7 @@ get_header();
             </div>
             <div class="container hero-content">
                 <div class="hero-text animate-fade-up">
-                    <p class="hero-greeting">Assalam-o-Alaikum! I'm</p>
+                    <p class="hero-greeting">Hi! I'm</p>
                     <h1 class="hero-title">Muhammad <span class="highlight-red">Ammad</span> Younas</h1>
                     <h2 class="hero-subtitle type-effect">Android Developer & Python Enthusiast</h2>
                     <p class="hero-description">
