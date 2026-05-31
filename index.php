@@ -45,18 +45,18 @@ get_header();
                             <p><strong>The University of Lahore</strong><br>
                             Bachelor of Science in Computer Science (BSCS)<br>
                             <em>Nov 2022 - Aug 2026</em></p>
-                            <a href="#" class="btn-cert mt-2"><i class="fa-solid fa-eye"></i> View Certificate</a>
+                            <a href="https://drive.google.com/file/d/1SL44XruiowFVh9g0n_PjtN03EcVX1Oqx/view?usp=sharing" target="_blank" class="btn-cert mt-2"><i class="fa-solid fa-eye"></i> View Transcript</a>
                         </div>
                         <div class="certification-box mt-3">
                             <h4><i class="fa-solid fa-certificate highlight-orange"></i> Certifications & Experience</h4>
                             <ul class="cert-list">
                                 <li>
                                     <span>Defronix Certified Junior Security Practitioner (DCjSP)</span>
-                                    <a href="#" class="btn-cert-small"><i class="fa-solid fa-eye"></i></a>
+                                    <a href="https://drive.google.com/file/d/1Ohfpn9g187XD9tKTaKcCiDj4wL6747lT/view?usp=sharing" target="_blank" class="btn-cert-small"><i class="fa-solid fa-eye"></i></a>
                                 </li>
                                 <li>
                                     <span>Internship at CodSoft</span>
-                                    <a href="#" class="btn-cert-small"><i class="fa-solid fa-eye"></i></a>
+                                    <a href="https://drive.google.com/file/d/1ALY-1tRmbGh2cSTOCn98DuiJf8O_Ltej/view?usp=sharing" target="_blank" class="btn-cert-small"><i class="fa-solid fa-eye"></i></a>
                                 </li>
                             </ul>
                         </div>
@@ -73,7 +73,7 @@ get_header();
             </div>
         </section>
 
-        <!-- TECH STACK SECTION -->
+        <!-- TECH STACK/Skills SECTION -->
         <section id="skills" class="skills-section section-padding dark-bg">
             <div class="container">
                 <div class="section-heading text-center animate-fade-up">
@@ -84,25 +84,25 @@ get_header();
                 <div class="tech-stack-grid animate-fade-up">
                     <?php
                     $tech_stack = [
-                        ['name' => 'Python', 'icon' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg'],
-                        ['name' => 'Dart', 'icon' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg'],
-                        ['name' => 'Flutter', 'icon' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg'],
-                        ['name' => 'FastAPI', 'icon' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg'],
-                        ['name' => 'Flask', 'icon' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg'],
-                        ['name' => 'Django', 'icon' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg'],
-                        ['name' => 'Pandas', 'icon' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg'],
-                        ['name' => 'Redis', 'icon' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg'],
-                        ['name' => 'SQL', 'icon' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg'],
-                        ['name' => 'SQLite', 'icon' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg'],
-                        ['name' => 'Firebase', 'icon' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg'],
-                        ['name' => 'Git', 'icon' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg'],
-                        ['name' => 'GitHub', 'icon' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg'],
-                        ['name' => 'REST APIs', 'icon' => 'https://cdn.simpleicons.org/openapiinitiative'],
-                        ['name' => 'C++', 'icon' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg'],
-                        ['name' => 'Selenium', 'icon' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg'],
-                        ['name' => 'Scrapy', 'icon' => 'https://cdn.simpleicons.org/scrapy'],
-                        ['name' => 'Postman', 'icon' => 'https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg'],
-                        ['name' => 'Linux', 'icon' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg'],
+                        ['name' => 'Python', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/python.svg'],
+                        ['name' => 'Dart', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/dart.svg'],
+                        ['name' => 'Flutter', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/flutter.svg'],
+                        ['name' => 'FastAPI', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/fastapi.svg'],
+                        ['name' => 'Flask', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/flask.svg'],
+                        ['name' => 'Django', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/django.svg'],
+                        ['name' => 'Pandas', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/pandas.svg'],
+                        ['name' => 'Redis', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/redis.svg'],
+                        ['name' => 'SQL', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/sql.svg'],
+                        ['name' => 'SQLite', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/sqlite.svg'],
+                        ['name' => 'Firebase', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/firebase.svg'],
+                        ['name' => 'Git', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/git.svg'],
+                        ['name' => 'GitHub', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/github.svg'],
+                        ['name' => 'REST APIs', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/rest-apis.svg'],
+                        ['name' => 'C++', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/cpp.svg'],
+                        ['name' => 'Selenium', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/selenium.svg'],
+                        ['name' => 'Scrapy', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/scrapy.svg'],
+                        ['name' => 'Postman', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/postman.svg'],
+                        ['name' => 'Linux', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/linux.svg'],
                     ];
                     
                     foreach ($tech_stack as $tech) {
@@ -127,7 +127,7 @@ get_header();
                 <div class="projects-grid">
                     <!-- Project 1 -->
                     <div class="project-card glass-card animate-fade-up" style="animation-delay: 0.1s;">
-                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/projects_header_images/placeholder1.jpg" onerror="this.src='https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'" alt="QR Generator" class="project-img">
+                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/projects_header_images/placeholder1.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'" alt="QR Generator" class="project-img">
                         <div class="project-content">
                             <h3 class="project-title">QR Generator</h3>
                             <p class="project-desc">QR Generator and Decoder software built using Python and the GUI library Tkinter.</p>
@@ -145,7 +145,7 @@ get_header();
 
                     <!-- Project 2 -->
                     <div class="project-card glass-card animate-fade-up" style="animation-delay: 0.2s;">
-                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/projects_header_images/placeholder2.jpg" onerror="this.src='https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'" alt="Maze Generator" class="project-img">
+                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/projects_header_images/placeholder2.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'" alt="Maze Generator" class="project-img">
                         <div class="project-content">
                             <h3 class="project-title">Maze Generator & Solver</h3>
                             <p class="project-desc">An algorithmic project focused on generating random mazes and solving them using Depth-First Search (DFS).</p>
@@ -163,7 +163,7 @@ get_header();
 
                     <!-- Project 3 -->
                     <div class="project-card glass-card animate-fade-up" style="animation-delay: 0.3s;">
-                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/projects_header_images/placeholder3.jpg" onerror="this.src='https://images.unsplash.com/photo-1555949963-aa79dcee57d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'" alt="Password Generator" class="project-img">
+                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/projects_header_images/placeholder3.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1614064641913-6b71f3bb912b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'" alt="Password Generator" class="project-img">
                         <div class="project-content">
                             <h3 class="project-title">Password Generator</h3>
                             <p class="project-desc">GUI-based software for creating strong, random, and secure passwords effortlessly.</p>
@@ -181,7 +181,7 @@ get_header();
                     
                     <!-- Project 4 -->
                     <div class="project-card glass-card animate-fade-up" style="animation-delay: 0.4s;">
-                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/projects_header_images/placeholder4.jpg" onerror="this.src='https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'" alt="Cursor Coordinates Capturer" class="project-img">
+                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/projects_header_images/placeholder4.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'" alt="Cursor Coordinates Capturer" class="project-img">
                         <div class="project-content">
                             <h3 class="project-title">Cursor Coordinates Capturer</h3>
                             <p class="project-desc">Real-time GUI software that captures and displays exact cursor coordinates on the screen.</p>

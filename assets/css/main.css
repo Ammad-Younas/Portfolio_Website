@@ -925,13 +925,20 @@ body.light-mode .form-group textarea {
     color: #fff;
 }
 
-.footer-links li,
-.footer-contact li {
+.footer-links li {
     margin-bottom: 12px;
 }
 
-.footer-links a,
 .footer-contact li {
+    margin-bottom: 12px;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    word-break: break-word;
+}
+
+.footer-links a {
     color: var(--text-muted);
 }
 
@@ -942,9 +949,9 @@ body.light-mode .form-group textarea {
 
 .footer-contact i {
     color: var(--color-red);
-    margin-right: 10px;
     width: 15px;
     text-align: center;
+    flex-shrink: 0;
 }
 
 .site-info {
