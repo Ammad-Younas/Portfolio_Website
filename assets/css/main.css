@@ -679,9 +679,9 @@ body.light-mode .profile-social-item:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100px;
+    min-width: 100px;
     height: 100px;
-    padding: 15px;
+    padding: 15px 20px;
     background: var(--glass-bg);
     border: 1px solid var(--glass-border);
     border-radius: 16px;
@@ -707,6 +707,7 @@ body.light-mode .profile-social-item:hover {
     text-transform: uppercase;
     letter-spacing: 0.5px;
     color: var(--text-muted);
+    white-space: nowrap;
 }
 
 /* Projects Section */
@@ -1099,7 +1100,7 @@ body.light-mode .form-group textarea {
     }
 
     .about-image-wrapper {
-        max-width: 400px;
+        max-width: 100%;
         margin: 0 auto;
     }
 

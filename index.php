@@ -91,19 +91,19 @@ get_header();
                                         </div>
                                     </a>
 
-                                    <a href="#" class="profile-social-item">
-                                        <div class="social-icon-box"><i class="fa-brands fa-stack-overflow"></i></div>
+                                    <a href="https://www.facebook.com/ammad.younas.92" target="_blank" class="profile-social-item">
+                                        <div class="social-icon-box"><i class="fa-brands fa-facebook"></i></div>
                                         <div class="social-text">
-                                            <span class="social-name">Stack Overflow</span>
-                                            <span class="social-username">Ammad Younas</span>
+                                            <span class="social-name">Facebook</span>
+                                            <span class="social-username">ammad.younas.92</span>
                                         </div>
                                     </a>
 
-                                    <a href="#" class="profile-social-item">
-                                        <div class="social-icon-box"><i class="fa-brands fa-discord"></i></div>
+                                    <a href="https://www.instagram.com/ammad.younas.92" target="_blank" class="profile-social-item">
+                                        <div class="social-icon-box"><i class="fa-brands fa-instagram"></i></div>
                                         <div class="social-text">
-                                            <span class="social-name">Discord</span>
-                                            <span class="social-username">ammadyounas</span>
+                                            <span class="social-name">Instagram</span>
+                                            <span class="social-username">ammad.younas.92</span>
                                         </div>
                                     </a>
                                 </div>
@@ -125,13 +125,13 @@ get_header();
                 <div class="tech-stack-grid animate-fade-up">
                     <?php
                     $tech_stack = [
+                        ['name' => 'Kotlin', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/kotlin.svg'],
+                        ['name' => 'Jetpack Compose', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/jetpackcompose.svg'],
                         ['name' => 'Python', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/python.svg'],
                         ['name' => 'Dart', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/dart.svg'],
                         ['name' => 'Flutter', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/flutter.svg'],
                         ['name' => 'FastAPI', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/fastapi.svg'],
                         ['name' => 'Flask', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/flask.svg'],
-                        ['name' => 'Django', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/django.svg'],
-                        ['name' => 'Pandas', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/pandas.svg'],
                         ['name' => 'Redis', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/redis.svg'],
                         ['name' => 'SQL', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/sql.svg'],
                         ['name' => 'SQLite', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/sqlite.svg'],
@@ -139,7 +139,6 @@ get_header();
                         ['name' => 'Git', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/git.svg'],
                         ['name' => 'GitHub', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/github.svg'],
                         ['name' => 'REST APIs', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/rest-apis.svg'],
-                        ['name' => 'C++', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/cpp.svg'],
                         ['name' => 'Selenium', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/selenium.svg'],
                         ['name' => 'Scrapy', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/scrapy.svg'],
                         ['name' => 'Postman', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/postman.svg'],
