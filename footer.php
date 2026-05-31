@@ -1,7 +1,7 @@
 	<footer id="colophon" class="site-footer">
         <div class="footer-top container">
             <div class="footer-widget">
-                <h3 class="footer-title"><span class="highlight-orange">Ammad</span> Younas</h3>
+                <h3 class="footer-title"><span class="highlight-orange">MADI</span> Wist</h3>
                 <p>Android & Python Developer turning ideas into functional, clean, and user-friendly mobile and desktop applications.</p>
                 <div class="social-links">
                     <a href="https://github.com/Ammad-Younas" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
@@ -22,7 +22,7 @@
                 <ul class="footer-contact">
                     <li><i class="fa-solid fa-location-dot"></i> Sargodha, Punjab, Pakistan</li>
                     <li><i class="fa-solid fa-phone"></i> +923017047024</li>
-                    <li><i class="fa-solid fa-envelope"></i> ammadyounas837@gmail.com</li>
+                    <li><i class="fa-solid fa-envelope"></i> ammadyounas.tech@gmail.com</li>
                 </ul>
             </div>
         </div>

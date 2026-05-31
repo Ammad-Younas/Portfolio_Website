@@ -18,7 +18,7 @@
         <div class="header-container container">
             <div class="site-branding">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="logo">
-                    <span class="logo-text"><span class="highlight-red">Ammad</span> Younas</span>
+                    <span class="logo-text"><span class="highlight-red">MADI</span> Wist</span>
                 </a>
             </div>
 

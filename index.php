@@ -181,7 +181,7 @@ get_header();
                             <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
                             <div class="contact-details">
                                 <h4>Email</h4>
-                                <a href="mailto:ammadyounas837@gmail.com">ammadyounas837@gmail.com</a>
+                                <a href="mailto:ammadyounas.tech@gmail.com">ammadyounas.tech@gmail.com</a>
                             </div>
                         </div>
                         <div class="contact-item">
@@ -189,6 +189,13 @@ get_header();
                             <div class="contact-details">
                                 <h4>Phone</h4>
                                 <a href="tel:+923017047024">+92 301 7047024</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+                            <div class="contact-details">
+                                <h4>WhatsApp</h4>
+                                <a href="wa.me/+92 301 7047024">WhatsApp Here</a>
                             </div>
                         </div>
                         <div class="contact-item">
