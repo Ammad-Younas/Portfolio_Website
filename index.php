@@ -167,71 +167,113 @@ get_header();
                 <div class="projects-grid">
                     <!-- Project 1 -->
                     <div class="project-card glass-card animate-fade-up" style="animation-delay: 0.1s;">
-                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/projects_header_images/placeholder1.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'" alt="QR Generator" class="project-img">
+                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/projects_header_images/appointment_booking_app.jpg" alt="Appointment Booking App" class="project-img">
                         <div class="project-content">
-                            <h3 class="project-title">QR Generator</h3>
-                            <p class="project-desc">QR Generator and Decoder software built using Python and the GUI library Tkinter.</p>
+                            <h3 class="project-title">Appointment Booking App</h3>
+                            <p class="project-desc">A cross-platform Flutter application designed to seamlessly connect patients with healthcare professionals by appointment scheduling and management.</p>
                             <div class="project-tags">
-                                <span>Python</span>
-                                <span>Tkinter</span>
-                                <span>GUI</span>
+                                <span>Flutter</span>    
+                                <span>Dart</span>
+                                <span>Firebase</span>
+                                <span>Cross Platform Development</span>
                             </div>
                             <div class="project-links" style="display: flex; gap: 15px; flex-wrap: wrap;">
-                                <a href="https://github.com/Ammad-Younas/QR_Generator" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> View Repository</a>
-                                <a href="<?php echo esc_url( get_template_directory_uri() . '/src/projects/project-qr.php' ); ?>" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</a>
+                                <a href="https://github.com/Ammad-Younas/Appointment_Booking_App" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> View Repository</a>
+                                <a href="<?php echo esc_url( get_template_directory_uri() . '/src/projects/appointment_booking_app.php' ); ?>" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Project 2 -->
                     <div class="project-card glass-card animate-fade-up" style="animation-delay: 0.2s;">
-                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/projects_header_images/placeholder2.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'" alt="Maze Generator" class="project-img">
+                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/projects_header_images/under_byte.jpg" alt="Under Byte" class="project-img">
                         <div class="project-content">
-                            <h3 class="project-title">Maze Generator & Solver</h3>
-                            <p class="project-desc">An algorithmic project focused on generating random mazes and solving them using Depth-First Search (DFS).</p>
+                            <h3 class="project-title">Under Byte</h3>
+                            <p class="project-desc">An Android messaging app combining room-based chat functionality with advanced steganography integration.</p>
                             <div class="project-tags">
-                                <span>Algorithms</span>
-                                <span>DFS</span>
-                                <span>Data Structures</span>
+                                <span>Android Development</span>
+                                <span>Kotlin</span>
+                                <span>Steganography</span>
+                                <span>Mobile Chat Application</span>
                             </div>
                             <div class="project-links" style="display: flex; gap: 15px; flex-wrap: wrap;">
-                                <a href="https://github.com/Ammad-Younas/Maze_Generator_and_Solver_Using_DFS" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> View Repository</a>
-                                <a href="<?php echo esc_url( get_template_directory_uri() . '/src/projects/project-maze.php' ); ?>" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</a>
+                                <a href="https://github.com/Ammad-Younas/Under-Byte" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> View Repository</a>
+                                <a href="<?php echo esc_url( get_template_directory_uri() . '/src/projects/under_byte.php' ); ?>" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Project 3 -->
                     <div class="project-card glass-card animate-fade-up" style="animation-delay: 0.3s;">
-                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/projects_header_images/placeholder3.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1614064641913-6b71f3bb912b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'" alt="Password Generator" class="project-img">
+                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/projects_header_images/recipe_app.jpg" alt="Recipe App" class="project-img">
                         <div class="project-content">
-                            <h3 class="project-title">Password Generator</h3>
-                            <p class="project-desc">GUI-based software for creating strong, random, and secure passwords effortlessly.</p>
+                            <h3 class="project-title">Recipe App</h3>
+                            <p class="project-desc">An Android application developed in Kotlin that fetches and displays recipe categories via modern API integration.</p>
                             <div class="project-tags">
-                                <span>Python</span>
-                                <span>Security</span>
-                                <span>Tool</span>
+                                <span>Android Development</span>
+                                <span>Kotlin</span>
+                                <span>API Integration</span>
+                                <span>MVVM Architecture</span>
                             </div>
                             <div class="project-links" style="display: flex; gap: 15px; flex-wrap: wrap;">
-                                <a href="https://github.com/Ammad-Younas/Password_Generator" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> View Repository</a>
-                                <a href="<?php echo esc_url( get_template_directory_uri() . '/src/projects/project-password.php' ); ?>" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</a>
+                                <a href="https://github.com/Ammad-Younas/Android_Development_Journey/tree/main/RecipeApp" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> View Repository</a>
+                                <a href="<?php echo esc_url( get_template_directory_uri() . '/src/projects/recipe_app.php' ); ?>" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</a>
                             </div>
                         </div>
                     </div>
                     
                     <!-- Project 4 -->
                     <div class="project-card glass-card animate-fade-up" style="animation-delay: 0.4s;">
-                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/projects_header_images/placeholder4.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'" alt="Cursor Coordinates Capturer" class="project-img">
+                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/projects_header_images/odoo_partner_scraper.jpg" alt="Odoo Partner Scraper" class="project-img">
                         <div class="project-content">
-                            <h3 class="project-title">Cursor Coordinates Capturer</h3>
-                            <p class="project-desc">Real-time GUI software that captures and displays exact cursor coordinates on the screen.</p>
+                            <h3 class="project-title">Odoo Partner Scraper</h3>
+                            <p class="project-desc">A Python automation utility built to extract partner data from Odoo platforms, driven by a central scraping script and managed via standard Python dependency files.</p>
                             <div class="project-tags">
                                 <span>Python</span>
                                 <span>Automation</span>
+                                <span>Web Scraping</span>
+                                <span>Odoo</span>
                             </div>
                             <div class="project-links" style="display: flex; gap: 15px; flex-wrap: wrap;">
-                                <a href="https://github.com/Ammad-Younas/Cursor_Coordinates_Captcher" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> View Repository</a>
-                                <a href="<?php echo esc_url( get_template_directory_uri() . '/src/projects/project-cursor.php' ); ?>" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</a>
+                                <a href="https://github.com/Ammad-Younas/Odoo_Scraper" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> View Repository</a>
+                                <a href="<?php echo esc_url( get_template_directory_uri() . '/src/projects/odoo_partner_scraper.php' ); ?>" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 -->
+                    <div class="project-card glass-card animate-fade-up" style="animation-delay: 0.5s;">
+                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/projects_header_images/yt_as_storage.png" alt="Youtube As Unlimited Storage" class="project-img">
+                        <div class="project-content">
+                            <h3 class="project-title">YouTube As Unlimited Storage</h3>
+                            <p class="project-desc">A Python tool designed to encode files into videos and decode them back, effectively transforming YouTube into an unlimited storage drive.</p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>File Conversion</span>
+                                <span>Data Encoding</span>
+                            </div>
+                            <div class="project-links" style="display: flex; gap: 15px; flex-wrap: wrap;">
+                                <a href="https://github.com/Ammad-Younas/Youtube_As_Unlimited_Storage" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> View Repository</a>
+                                <a href="<?php echo esc_url( get_template_directory_uri() . '/src/projects/youtube_as_unlimited_storage.php' ); ?>" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 6 -->
+                    <div class="project-card glass-card animate-fade-up" style="animation-delay: 0.6s;">
+                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/projects_header_images/portable_exe_gen.png" alt="Portable EXE Generator" class="project-img">
+                        <div class="project-content">
+                            <h3 class="project-title">Portable EXE Generator</h3>
+                            <p class="project-desc">A software tool built with Python for generating standalone portable executables using self-extracting archive modules.</p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Automation</span>
+                                <span>SFX Archive</span>
+                                <span>Executable Generator</span>
+                            </div>
+                            <div class="project-links" style="display: flex; gap: 15px; flex-wrap: wrap;">
+                                <a href="https://github.com/Ammad-Younas/Portable_EXE_Generator" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> View Repository</a>
+                                <a href="<?php echo esc_url( get_template_directory_uri() . '/src/projects/portable_exe_gen.php' ); ?>" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</a>
                             </div>
                         </div>
                     </div>
