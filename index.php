@@ -63,10 +63,51 @@ get_header();
                     </div>
                     <div class="about-image-container animate-fade-up" style="animation-delay: 0.2s;">
                         <div class="about-image-wrapper">
-                            <div class="image-placeholder">
-                                <i class="fa-solid fa-code"></i>
+                            <div class="image-placeholder profile-card">
+                                <i class="fa-solid fa-circle-user profile-avatar"></i>
+                                
+                                <div class="profile-socials">
+                                    <a href="https://github.com/Ammad-Younas" target="_blank" class="profile-social-item">
+                                        <div class="social-icon-box"><i class="fa-brands fa-github"></i></div>
+                                        <div class="social-text">
+                                            <span class="social-name">GitHub</span>
+                                            <span class="social-username">@Ammad-Younas</span>
+                                        </div>
+                                    </a>
+                                    
+                                    <a href="https://www.linkedin.com/in/ammad-younas" target="_blank" class="profile-social-item">
+                                        <div class="social-icon-box"><i class="fa-brands fa-linkedin-in"></i></div>
+                                        <div class="social-text">
+                                            <span class="social-name">LinkedIn</span>
+                                            <span class="social-username">ammad-younas</span>
+                                        </div>
+                                    </a>
+                                    
+                                    <a href="mailto:ammadyounas.tech@gmail.com" class="profile-social-item">
+                                        <div class="social-icon-box"><i class="fa-solid fa-envelope"></i></div>
+                                        <div class="social-text">
+                                            <span class="social-name">Email</span>
+                                            <span class="social-username">ammadyounas.tech@gmail.com</span>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" class="profile-social-item">
+                                        <div class="social-icon-box"><i class="fa-brands fa-stack-overflow"></i></div>
+                                        <div class="social-text">
+                                            <span class="social-name">Stack Overflow</span>
+                                            <span class="social-username">Ammad Younas</span>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" class="profile-social-item">
+                                        <div class="social-icon-box"><i class="fa-brands fa-discord"></i></div>
+                                        <div class="social-text">
+                                            <span class="social-name">Discord</span>
+                                            <span class="social-username">ammadyounas</span>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="image-accent-border"></div>
                         </div>
                     </div>
                 </div>
