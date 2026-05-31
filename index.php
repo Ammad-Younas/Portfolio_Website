@@ -19,9 +19,9 @@ get_header();
                         I specialize in building native Android applications and automating workflows with Python. Turning ideas into functional, clean, and user-friendly digital experiences.
                     </p>
                     <div class="hero-actions">
-                        <a href="#projects" class="btn btn-primary">View My Work <i class="fa-solid fa-arrow-right"></i></a>
-                        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
-                        <a href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/cv.pdf" target="_blank" class="btn btn-secondary"><i class="fa-solid fa-download"></i> Download CV</a>
+                        <a href="#projects" class="btn btn-primary">View My Work &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#contact" class="btn btn-secondary">Get in Touch &nbsp;<i class="fa-solid fa-envelope"></i></a>
+                        <a href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/cv.pdf" target="_blank" class="btn btn-secondary">Download CV &nbsp;<i class="fa-solid fa-download"></i></a>
                     </div>
                 </div>
             </div>

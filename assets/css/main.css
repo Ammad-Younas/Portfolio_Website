@@ -282,6 +282,10 @@ ul {
     color: #fff;
 }
 
+.theme-toggle-btn {
+    color: #fff;
+}
+
 .menu-toggle {
     display: none;
     background: none;
