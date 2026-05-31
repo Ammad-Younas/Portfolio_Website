@@ -64,8 +64,6 @@ get_header();
                     <div class="about-image-container animate-fade-up" style="animation-delay: 0.2s;">
                         <div class="about-image-wrapper">
                             <div class="image-placeholder profile-card">
-                                <i class="fa-solid fa-circle-user profile-avatar"></i>
-                                
                                 <div class="profile-socials">
                                     <a href="https://github.com/Ammad-Younas" target="_blank" class="profile-social-item">
                                         <div class="social-icon-box"><i class="fa-brands fa-github"></i></div>
@@ -164,9 +162,15 @@ get_header();
                     <div class="section-line mx-auto"></div>
                 </div>
 
+                <div class="projects-filter animate-fade-up" style="animation-delay: 0.1s;">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="python">Python</button>
+                    <button class="filter-btn" data-filter="android">Android</button>
+                </div>
+
                 <div class="projects-grid">
                     <!-- Project 1 -->
-                    <div class="project-card glass-card animate-fade-up" style="animation-delay: 0.1s;">
+                    <div class="project-card glass-card animate-fade-up project-item" data-category="android" style="animation-delay: 0.1s;">
                         <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/projects_header_images/appointment_booking_app.jpg" alt="Appointment Booking App" class="project-img">
                         <div class="project-content">
                             <h3 class="project-title">Appointment Booking App</h3>
@@ -185,7 +189,7 @@ get_header();
                     </div>
 
                     <!-- Project 2 -->
-                    <div class="project-card glass-card animate-fade-up" style="animation-delay: 0.2s;">
+                    <div class="project-card glass-card animate-fade-up project-item" data-category="android" style="animation-delay: 0.2s;">
                         <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/projects_header_images/under_byte.jpg" alt="Under Byte" class="project-img">
                         <div class="project-content">
                             <h3 class="project-title">Under Byte</h3>
@@ -204,7 +208,7 @@ get_header();
                     </div>
 
                     <!-- Project 3 -->
-                    <div class="project-card glass-card animate-fade-up" style="animation-delay: 0.3s;">
+                    <div class="project-card glass-card animate-fade-up project-item" data-category="android" style="animation-delay: 0.3s;">
                         <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/projects_header_images/recipe_app.jpg" alt="Recipe App" class="project-img">
                         <div class="project-content">
                             <h3 class="project-title">Recipe App</h3>
@@ -223,7 +227,7 @@ get_header();
                     </div>
                     
                     <!-- Project 4 -->
-                    <div class="project-card glass-card animate-fade-up" style="animation-delay: 0.4s;">
+                    <div class="project-card glass-card animate-fade-up project-item" data-category="python" style="animation-delay: 0.4s;">
                         <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/projects_header_images/odoo_partner_scraper.jpg" alt="Odoo Partner Scraper" class="project-img">
                         <div class="project-content">
                             <h3 class="project-title">Odoo Partner Scraper</h3>
@@ -242,7 +246,7 @@ get_header();
                     </div>
 
                     <!-- Project 5 -->
-                    <div class="project-card glass-card animate-fade-up" style="animation-delay: 0.5s;">
+                    <div class="project-card glass-card animate-fade-up project-item" data-category="python" style="animation-delay: 0.5s;">
                         <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/projects_header_images/yt_as_storage.png" alt="Youtube As Unlimited Storage" class="project-img">
                         <div class="project-content">
                             <h3 class="project-title">YouTube As Unlimited Storage</h3>
@@ -260,7 +264,7 @@ get_header();
                     </div>
 
                     <!-- Project 6 -->
-                    <div class="project-card glass-card animate-fade-up" style="animation-delay: 0.6s;">
+                    <div class="project-card glass-card animate-fade-up project-item" data-category="python" style="animation-delay: 0.6s;">
                         <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/projects_header_images/portable_exe_gen.png" alt="Portable EXE Generator" class="project-img">
                         <div class="project-content">
                             <h3 class="project-title">Portable EXE Generator</h3>
@@ -277,6 +281,10 @@ get_header();
                             </div>
                         </div>
                     </div>
+                </div>
+                
+                <div class="text-center mt-5 animate-fade-up" style="animation-delay: 0.7s;">
+                    <a href="https://github.com/Ammad-Younas?tab=repositories" target="_blank" class="btn btn-primary" style="margin-top: 30px;">View all projects</a>
                 </div>
             </div>
         </section>
