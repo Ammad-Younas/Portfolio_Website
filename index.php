@@ -12,11 +12,11 @@ get_header();
             </div>
             <div class="container hero-content">
                 <div class="hero-text animate-fade-up">
-                    <p class="hero-greeting">Hi! I'm</p>
+                    <p class="hero-greeting">Hi, I'm</p>
                     <h1 class="hero-title">Muhammad <span class="highlight-red">Ammad</span> Younas</h1>
                     <h2 class="hero-subtitle type-effect">Android Developer & Python Enthusiast</h2>
                     <p class="hero-description">
-                        I specialize in building native Android applications and automating workflows with Python. Turning ideas into functional, clean, and user-friendly digital experiences.
+                        I specialize in building native Android applications and automating workflows with Python. Turning ideas into functional, clean and user-friendly digital experiences.
                     </p>
                     <div class="hero-actions">
                         <a href="#projects" class="btn btn-primary">View My Work &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
@@ -37,20 +37,27 @@ get_header();
                 <div class="about-content grid-2-col">
                     <div class="about-text glass-card animate-fade-up" style="animation-delay: 0.1s;">
                         <h3>Aspiring Developer with a passion for problem-solving</h3>
-                        <p>I am actively developing my skills across the software development lifecycle, including UI design, feature implementation, backend integration, performance optimization, and testing.</p>
-                        <p>Alongside Android development, I have hands-on experience in web scraping, automation, and desktop application development, which strengthens my technical foundation.</p>
+                        <p>I am actively developing my skills across the software development lifecycle, including UI design, feature implementation, backend integration, performance optimization and testing.</p>
+                        <p>Alongside Android development, I have hands-on experience in web scraping, automation and desktop application development, which strengthens my technical foundation.</p>
                         
                         <div class="education-box mt-4">
                             <h4><i class="fa-solid fa-graduation-cap highlight-red"></i> Education</h4>
                             <p><strong>The University of Lahore</strong><br>
                             Bachelor of Science in Computer Science (BSCS)<br>
                             <em>Nov 2022 - Aug 2026</em></p>
+                            <a href="#" class="btn-cert mt-2"><i class="fa-solid fa-eye"></i> View Certificate</a>
                         </div>
                         <div class="certification-box mt-3">
                             <h4><i class="fa-solid fa-certificate highlight-orange"></i> Certifications & Experience</h4>
-                            <ul>
-                                <li>Defronix Certified Junior Security Practitioner (DCjSP)</li>
-                                <li>Internship at CodSoft</li>
+                            <ul class="cert-list">
+                                <li>
+                                    <span>Defronix Certified Junior Security Practitioner (DCjSP)</span>
+                                    <a href="#" class="btn-cert-small"><i class="fa-solid fa-eye"></i></a>
+                                </li>
+                                <li>
+                                    <span>Internship at CodSoft</span>
+                                    <a href="#" class="btn-cert-small"><i class="fa-solid fa-eye"></i></a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -66,35 +73,45 @@ get_header();
             </div>
         </section>
 
-        <!-- SKILLS SECTION -->
+        <!-- TECH STACK SECTION -->
         <section id="skills" class="skills-section section-padding dark-bg">
             <div class="container">
                 <div class="section-heading text-center animate-fade-up">
-                    <h2 class="section-title">Technical <span class="highlight-red">Skills</span></h2>
+                    <h2 class="section-title">Tech <span class="highlight-red">Stack</span></h2>
                     <div class="section-line mx-auto"></div>
                 </div>
                 
-                <div class="skills-grid">
-                    <!-- Skill Card 1 -->
-                    <div class="skill-card glass-card animate-fade-up" style="animation-delay: 0.1s;">
-                        <div class="skill-icon"><i class="fa-brands fa-android"></i></div>
-                        <h3 class="skill-name">Android Development</h3>
-                        <p>Native App Development, Kotlin, Java, UI/UX Design, REST APIs integration.</p>
-                    </div>
+                <div class="tech-stack-grid animate-fade-up">
+                    <?php
+                    $tech_stack = [
+                        ['name' => 'Python', 'icon' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg'],
+                        ['name' => 'Dart', 'icon' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg'],
+                        ['name' => 'Flutter', 'icon' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg'],
+                        ['name' => 'FastAPI', 'icon' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg'],
+                        ['name' => 'Flask', 'icon' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg'],
+                        ['name' => 'Django', 'icon' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg'],
+                        ['name' => 'Pandas', 'icon' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg'],
+                        ['name' => 'Redis', 'icon' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg'],
+                        ['name' => 'SQL', 'icon' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg'],
+                        ['name' => 'SQLite', 'icon' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg'],
+                        ['name' => 'Firebase', 'icon' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg'],
+                        ['name' => 'Git', 'icon' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg'],
+                        ['name' => 'GitHub', 'icon' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg'],
+                        ['name' => 'REST APIs', 'icon' => 'https://cdn.simpleicons.org/openapiinitiative'],
+                        ['name' => 'C++', 'icon' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg'],
+                        ['name' => 'Selenium', 'icon' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg'],
+                        ['name' => 'Scrapy', 'icon' => 'https://cdn.simpleicons.org/scrapy'],
+                        ['name' => 'Postman', 'icon' => 'https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg'],
+                        ['name' => 'Linux', 'icon' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg'],
+                    ];
                     
-                    <!-- Skill Card 2 -->
-                    <div class="skill-card glass-card animate-fade-up" style="animation-delay: 0.2s;">
-                        <div class="skill-icon"><i class="fa-brands fa-python"></i></div>
-                        <h3 class="skill-name">Python Programming</h3>
-                        <p>Automation, Scripting, Web Scraping, Desktop Applications (Tkinter).</p>
-                    </div>
-
-                    <!-- Skill Card 3 -->
-                    <div class="skill-card glass-card animate-fade-up" style="animation-delay: 0.3s;">
-                        <div class="skill-icon"><i class="fa-solid fa-terminal"></i></div>
-                        <h3 class="skill-name">Core CS Skills</h3>
-                        <p>Data Structures, Algorithms (e.g., DFS), Problem Solving, Version Control (Git).</p>
-                    </div>
+                    foreach ($tech_stack as $tech) {
+                        echo '<div class="tech-card glass-card">';
+                        echo '<img src="' . esc_url($tech['icon']) . '" alt="' . esc_attr($tech['name']) . '" class="tech-icon">';
+                        echo '<span class="tech-name">' . esc_html($tech['name']) . '</span>';
+                        echo '</div>';
+                    }
+                    ?>
                 </div>
             </div>
         </section>
@@ -110,6 +127,7 @@ get_header();
                 <div class="projects-grid">
                     <!-- Project 1 -->
                     <div class="project-card glass-card animate-fade-up" style="animation-delay: 0.1s;">
+                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/projects_header_images/placeholder1.jpg" onerror="this.src='https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'" alt="QR Generator" class="project-img">
                         <div class="project-content">
                             <h3 class="project-title">QR Generator</h3>
                             <p class="project-desc">QR Generator and Decoder software built using Python and the GUI library Tkinter.</p>
@@ -120,13 +138,14 @@ get_header();
                             </div>
                             <div class="project-links" style="display: flex; gap: 15px; flex-wrap: wrap;">
                                 <a href="https://github.com/Ammad-Younas/QR_Generator" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> View Repository</a>
-                                <a href="#" target="_blank" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> See Live</a>
+                                <a href="<?php echo esc_url( get_template_directory_uri() . '/src/projects/project-qr.php' ); ?>" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Project 2 -->
                     <div class="project-card glass-card animate-fade-up" style="animation-delay: 0.2s;">
+                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/projects_header_images/placeholder2.jpg" onerror="this.src='https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'" alt="Maze Generator" class="project-img">
                         <div class="project-content">
                             <h3 class="project-title">Maze Generator & Solver</h3>
                             <p class="project-desc">An algorithmic project focused on generating random mazes and solving them using Depth-First Search (DFS).</p>
@@ -137,13 +156,14 @@ get_header();
                             </div>
                             <div class="project-links" style="display: flex; gap: 15px; flex-wrap: wrap;">
                                 <a href="https://github.com/Ammad-Younas/Maze_Generator_and_Solver_Using_DFS" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> View Repository</a>
-                                <a href="#" target="_blank" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> See Live</a>
+                                <a href="<?php echo esc_url( get_template_directory_uri() . '/src/projects/project-maze.php' ); ?>" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Project 3 -->
                     <div class="project-card glass-card animate-fade-up" style="animation-delay: 0.3s;">
+                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/projects_header_images/placeholder3.jpg" onerror="this.src='https://images.unsplash.com/photo-1555949963-aa79dcee57d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'" alt="Password Generator" class="project-img">
                         <div class="project-content">
                             <h3 class="project-title">Password Generator</h3>
                             <p class="project-desc">GUI-based software for creating strong, random, and secure passwords effortlessly.</p>
@@ -154,13 +174,14 @@ get_header();
                             </div>
                             <div class="project-links" style="display: flex; gap: 15px; flex-wrap: wrap;">
                                 <a href="https://github.com/Ammad-Younas/Password_Generator" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> View Repository</a>
-                                <a href="#" target="_blank" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> See Live</a>
+                                <a href="<?php echo esc_url( get_template_directory_uri() . '/src/projects/project-password.php' ); ?>" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</a>
                             </div>
                         </div>
                     </div>
                     
                     <!-- Project 4 -->
                     <div class="project-card glass-card animate-fade-up" style="animation-delay: 0.4s;">
+                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/projects_header_images/placeholder4.jpg" onerror="this.src='https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'" alt="Cursor Coordinates Capturer" class="project-img">
                         <div class="project-content">
                             <h3 class="project-title">Cursor Coordinates Capturer</h3>
                             <p class="project-desc">Real-time GUI software that captures and displays exact cursor coordinates on the screen.</p>
@@ -170,7 +191,7 @@ get_header();
                             </div>
                             <div class="project-links" style="display: flex; gap: 15px; flex-wrap: wrap;">
                                 <a href="https://github.com/Ammad-Younas/Cursor_Coordinates_Captcher" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> View Repository</a>
-                                <a href="#" target="_blank" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> See Live</a>
+                                <a href="<?php echo esc_url( get_template_directory_uri() . '/src/projects/project-cursor.php' ); ?>" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</a>
                             </div>
                         </div>
                     </div>
@@ -223,13 +244,6 @@ get_header();
                             <div class="contact-details">
                                 <h4>Phone</h4>
                                 <a href="tel:+923017047024">+92 301 7047024</a>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
-                            <div class="contact-details">
-                                <h4>WhatsApp</h4>
-                                <a href="wa.me/+92 301 7047024">WhatsApp Here</a>
                             </div>
                         </div>
                         <div class="contact-item">

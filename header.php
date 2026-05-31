@@ -29,16 +29,16 @@
                 </button>
                 <div class="menu-container">
                     <ul id="primary-menu" class="menu">
-                        <li><a href="#hero">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="<?php echo esc_url( home_url( '/#hero' ) ); ?>">Home</a></li>
+                        <li><a href="<?php echo esc_url( home_url( '/#about' ) ); ?>">About</a></li>
+                        <li><a href="<?php echo esc_url( home_url( '/#skills' ) ); ?>">Skills</a></li>
+                        <li><a href="<?php echo esc_url( home_url( '/#projects' ) ); ?>">Projects</a></li>
                         <li>
                             <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Light/Dark Mode" style="background: none; border: none; font-size: 1.2rem; cursor: pointer; transition: color 0.3s; padding: 0;">
                                 <i class="fa-solid fa-sun"></i>
                             </button>
                         </li>
-                        <li><a href="#contact" class="btn-primary-nav">Contact Me</a></li>
+                        <li><a href="<?php echo esc_url( home_url( '/#contact' ) ); ?>" class="btn-primary-nav">Contact Me</a></li>
                     </ul>
                 </div>
             </nav>
