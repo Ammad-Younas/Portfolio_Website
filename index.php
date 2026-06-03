@@ -21,14 +21,14 @@ get_header();
                     <div class="hero-actions">
                         <a href="#projects" class="btn btn-primary">View My Work &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
                         <a href="#contact" class="btn btn-secondary">Get in Touch &nbsp;<i class="fa-solid fa-envelope"></i></a>
-                        <a href="<?php echo get_template_directory_uri(); ?>/assets/documents/Muhammad_Ammad_Younas_CV.pdf" target="_blank" class="btn btn-secondary">Download CV &nbsp;<i class="fa-solid fa-download"></i></a>
+                        <a href="https://drive.google.com/file/d/1nNG011n5-dohLoW5seiV78bAsG0getTi/view?usp=sharing" target="_blank" class="btn btn-secondary">Download CV &nbsp;<i class="fa-solid fa-download"></i></a>
                     </div>
                 </div>
                 <div class="hero-image-container animate-fade-up" style="animation-delay: 0.2s; text-align: center;">
                     <div class="hero-image-wrapper glass-card" style="display: inline-block; padding: 20px; border-radius: 50%; width: 100%; max-width: 350px; aspect-ratio: 1/1; position: relative;">
-                        <!-- Placeholder for Person Pic -->
-                        <div class="image-placeholder" style="width: 100%; height: 100%; border-radius: 50%; background: rgba(255, 51, 51, 0.1); display: flex; align-items: center; justify-content: center; overflow: hidden; border: 2px dashed var(--color-red);">
-                            <i class="fa-solid fa-user-astronaut" style="font-size: 7rem; color: var(--color-red); opacity: 0.5;"></i>
+                        <!-- Profile Pic -->
+                        <div class="image-placeholder" style="width: 100%; height: 100%; border-radius: 50%; display: flex; align-items: center; justify-content: center; overflow: hidden; border: 2px solid var(--color-red); background-color: #EFD6AE;">
+                            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/avatar/Ammad.png" alt="Ammad Younas" style="width: 100%; height: 100%; object-fit: contain; margin-top: 40px;">
                         </div>
                     </div>
                 </div>
@@ -47,6 +47,12 @@ get_header();
                         <h3>Aspiring Developer with a passion for problem-solving</h3>
                         <p>I am actively developing my skills across the software development lifecycle, including UI design, feature implementation, backend integration, performance optimization and testing.</p>
                         <p>Alongside Android development, I have hands-on experience in web scraping, automation and desktop application development, which strengthens my technical foundation.</p>
+                        <p>I am continuously learning, experimenting, and seeking opportunities to grow my career in Android development through internships, collaborations, and real-world projects.</p>
+
+                        <div class="text-center mt-5 animate-fade-up" style="animation-delay: 0.7s;">
+                            <a href="#contact" class="btn btn-primary" style="margin-top: 30px; display: block; width: 100%;">Let's Talk</a>
+                        </div>
+
                     </div>
                     <div class="about-image-container animate-fade-up" style="animation-delay: 0.2s;">
                         <div class="about-image-wrapper">
@@ -115,10 +121,10 @@ get_header();
                             <div class="timeline-item glass-card">
                                 <div class="timeline-dot"></div>
                                 <h4>Bachelor of Science in Computer Science (BSCS)</h4>
-                                <h5><span class="highlight-red">University:</span> The University of Lahore</h5>
-                                <span class="timeline-date">Nov 2022 - Aug 2026</span>
-                                <br>
-                                <a href="<?php echo get_template_directory_uri(); ?>/assets/documents/Transcript.pdf" target="_blank" class="btn-cert mt-3"><i class="fa-solid fa-eye"></i> View Transcript</a>
+                                <h5><strong><span class="highlight-red">University:</span></strong> The University of Lahore</h5>
+                                <span class="timeline-date">Nov 2022 - June 2026</span>
+                                <p class="mt-3 text-muted" style="font-size: 0.9rem; color: var(--text-muted);">Learned core concepts of Software Engineering, including programming fundamentals, object-oriented design, database systems, operating systems, computer networks. Developed practical skills in mobile application development and problem-solving through academic coursework and real-world projects. Gained experience in translating theoretical knowledge into scalable and user-focused software solutions.</p>
+                                <a href="https://drive.google.com/file/d/1SL44XruiowFVh9g0n_PjtN03EcVX1Oqx/view?usp=sharing" target="_blank" class="btn-cert mt-3"><i class="fa-solid fa-file-lines"></i> View Transcript</a>
                             </div>
                         </div>
                     </div>
@@ -126,20 +132,51 @@ get_header();
                     <!-- Experience Column -->
                     <div class="timeline-col animate-fade-up" style="animation-delay: 0.2s;">
                         <h3 class="timeline-title mb-4"><i class="fa-solid fa-briefcase highlight-orange"></i> Experience & Certifications</h3>
+                        
                         <div class="timeline">
                             <div class="timeline-item glass-card">
                                 <div class="timeline-dot"></div>
-                                <h4>Internship</h4>
-                                <h5><span class="highlight-orange">Company:</span> CodSoft</h5>
-                                <a href="<?php echo get_template_directory_uri(); ?>/assets/documents/Internship%20at%20CodeSoft.jpg" target="_blank" class="btn-cert-small mt-2"><i class="fa-solid fa-eye"></i> View Certificate</a>
+                                <h4>Android App Development</h4>
+                                <h5><strong><span class="highlight-orange">Highlight:</span></strong> Native Developer</h5>
+                                <span class="timeline-date">2025 - Current</span>
+                                <p class="mt-3 text-muted" style="font-size: 0.9rem; color: var(--text-muted);">Building scalable, user-centric mobile applications using modern Android frameworks and industry best practices.</p>
+                                <a href="#projects" class="btn-cert-small mt-2"><i class="fa-solid fa-eye"></i> View Projects</a>
                             </div>
                             <div class="timeline-item glass-card">
                                 <div class="timeline-dot"></div>
-                                <h4>Defronix Certified Junior Security Practitioner (DCjSP)</h4>
-                                <h5><span class="highlight-orange">Company:</span> Defronix</h5>
-                                <a href="<?php echo get_template_directory_uri(); ?>/assets/documents/DCjSP.jpg" target="_blank" class="btn-cert-small mt-2"><i class="fa-solid fa-eye"></i> View Certificate</a>
+                                <h4>Python Desktop Application Development</h4>
+                                <h5><strong><span class="highlight-orange">Highlight:</span></strong> Python Internship at <a href="https://www.linkedin.com/company/codsoft/" target="_blank" style="color: var(--highlight-orange); text-decoration: underline;">CodSoft</a></h5>
+                                <span class="timeline-date">2023 - 2024</span>
+                                <p class="mt-3 text-muted" style="font-size: 0.9rem; color: var(--text-muted);">Completed a comprehensive Python internship focused on building robust desktop applications with intuitive user interfaces.</p>
+                                <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-top: 15px;">
+                                    <a href="https://drive.google.com/file/d/1ALY-1tRmbGh2cSTOCn98DuiJf8O_Ltej/view?usp=sharing" target="_blank" class="btn-cert-small"><i class="fa-solid fa-file-lines"></i> View Certificate</a>
+                                    <a href="https://github.com/Ammad-Younas?tab=repositories" target="_blank" class="btn-cert-small"><i class="fa-solid fa-eye"></i> View Projects</a>
+                                </div>
+                            </div>
+                            <div class="timeline-item glass-card">
+                                <div class="timeline-dot"></div>
+                                <h4>Python Web Scraping</h4>
+                                <h5><strong><span class="highlight-orange">Highlight:</span></strong> Freelance</h5>
+                                <span class="timeline-date">2020 - 2022</span>
+                                <p class="mt-3 text-muted" style="font-size: 0.9rem; color: var(--text-muted);">Developed efficient automation scripts and web scrapers to extract and manage data from complex web platforms.</p>
+                                <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-top: 15px;">
+                                    <a href="#odoo_scraper" class="btn-cert-small"><i class="fa-solid fa-eye"></i> View Project</a>
+                                    <a href="https://github.com/Ammad-Younas?tab=repositories" target="_blank" class="btn-cert-small"><i class="fa-brands fa-github"></i> Other Projects</a>
+                                </div>
                             </div>
                         </div>
+
+                        <div class="timeline">
+                            <div class="timeline-item glass-card">
+                                <div class="timeline-dot"></div>
+                                <h4>Defronix Certified Junior Security Practitioner (DCjSP)</h4>
+                                <h5><strong><span class="highlight-orange">Defronix:</span></strong> Side Learning</h5>
+                                <span class="timeline-date">2021</span>
+                                <p class="mt-3 text-muted" style="font-size: 0.9rem; color: var(--text-muted);">I learned the basics of cybersecurity and how to protect computers and networks from online threats. I also gained practical experience in finding weak spots in systems so they can be safely fixed before hackers can take advantage of them.</p>
+                                <a href="https://drive.google.com/file/d/1Ohfpn9g187XD9tKTaKcCiDj4wL6747lT/view?usp=sharing" target="_blank" class="btn-cert-small mt-2"><i class="fa-solid fa-file-lines"></i> View Certificate</a>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -162,7 +199,6 @@ get_header();
                         ['name' => 'Dart', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/dart.svg'],
                         ['name' => 'Flutter', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/flutter.svg'],
                         ['name' => 'FastAPI', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/fastapi.svg'],
-                        ['name' => 'Flask', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/flask.svg'],
                         ['name' => 'Redis', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/redis.svg'],
                         ['name' => 'SQL', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/sql.svg'],
                         ['name' => 'SQLite', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/sqlite.svg'],
@@ -260,7 +296,7 @@ get_header();
                     </div>
                     
                     <!-- Project 4 -->
-                    <div class="project-card glass-card animate-fade-up project-item" data-category="python" style="animation-delay: 0.4s;">
+                    <div class="project-card glass-card animate-fade-up project-item" data-category="python" style="animation-delay: 0.4s;" id="odoo_scraper">
                         <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/projects_header_images/odoo_partner_scraper.jpg" alt="Odoo Partner Scraper" class="project-img">
                         <div class="project-content">
                             <h3 class="project-title">Odoo Partner Scraper</h3>

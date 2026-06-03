@@ -11,8 +11,10 @@
             <div class="footer-widget">
                 <h3 class="footer-title">Quick Links</h3>
                 <ul class="footer-links">
+                    <li><a href="#hero">Home</a></li>
                     <li><a href="#about">About Me</a></li>
                     <li><a href="#skills">My Skills</a></li>
+                    <li><a href="#journey">My Journey</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -31,18 +33,8 @@
                 <p>&copy; <?php echo date('Y'); ?> Muhammad Ammad Younas. All rights reserved.</p>
             </div>
 		</div>
-
-        <!-- Preview Modal -->
-        <div id="preview-modal" class="preview-modal">
-            <div class="preview-modal-content">
-                <span class="preview-modal-close">&times;</span>
-                <div id="preview-container" style="width: 100%; height: 100%;"></div>
-            </div>
-        </div>
 	</footer>
 </div>
-
 <?php wp_footer(); ?>
-
 </body>
 </html>

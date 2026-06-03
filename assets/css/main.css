@@ -775,6 +775,15 @@ body.light-mode .profile-social-item:hover {
     margin-bottom: 10px;
 }
 
+.timeline-col:nth-child(2) .glass-card:hover {
+    border-color: rgba(255, 123, 0, 0.3);
+}
+
+.timeline-col:nth-child(2) .timeline-date {
+    color: var(--color-orange);
+    background: rgba(255, 123, 0, 0.1);
+}
+
 /* Tech Stack Section */
 .tech-stack-grid {
     display: flex;

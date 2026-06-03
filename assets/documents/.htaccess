@@ -1,2 +1,0 @@
-AddType application/pdf .pdf
-Header set Content-Disposition inline
