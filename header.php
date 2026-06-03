@@ -31,6 +31,7 @@
                     <ul id="primary-menu" class="menu">
                         <li><a href="<?php echo esc_url( home_url( '/#hero' ) ); ?>">Home</a></li>
                         <li><a href="<?php echo esc_url( home_url( '/#about' ) ); ?>">About</a></li>
+                        <li><a href="<?php echo esc_url( home_url( '/#journey' ) ); ?>">Journey</a></li>
                         <li><a href="<?php echo esc_url( home_url( '/#skills' ) ); ?>">Skills</a></li>
                         <li><a href="<?php echo esc_url( home_url( '/#projects' ) ); ?>">Projects</a></li>
                         <li>

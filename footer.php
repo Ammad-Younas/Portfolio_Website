@@ -31,6 +31,14 @@
                 <p>&copy; <?php echo date('Y'); ?> Muhammad Ammad Younas. All rights reserved.</p>
             </div>
 		</div>
+
+        <!-- Preview Modal -->
+        <div id="preview-modal" class="preview-modal">
+            <div class="preview-modal-content">
+                <span class="preview-modal-close">&times;</span>
+                <iframe id="preview-iframe" src="" frameborder="0"></iframe>
+            </div>
+        </div>
 	</footer>
 </div>
 

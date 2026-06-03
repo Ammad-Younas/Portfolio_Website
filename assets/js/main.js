@@ -194,4 +194,36 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    // Preview Modal
+    const certLinks = document.querySelectorAll('.btn-cert, .btn-cert-small');
+    const modal = document.getElementById('preview-modal');
+    const iframe = document.getElementById('preview-iframe');
+    const closeBtn = document.querySelector('.preview-modal-close');
+
+    if (modal && iframe) {
+        certLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                let url = link.getAttribute('href');
+                if (url && url.includes('drive.google.com')) {
+                    url = url.replace('/view', '/preview');
+                }
+                iframe.src = url;
+                modal.style.display = 'block';
+            });
+        });
+        
+        closeBtn.addEventListener('click', () => {
+            modal.style.display = 'none';
+            iframe.src = '';
+        });
+        
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+                iframe.src = '';
+            }
+        });
+    }
 });

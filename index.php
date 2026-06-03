@@ -10,7 +10,7 @@ get_header();
                 <div class="glow-orb red-orb"></div>
                 <div class="glow-orb orange-orb"></div>
             </div>
-            <div class="container hero-content">
+            <div class="container hero-content grid-2-col" style="align-items: center;">
                 <div class="hero-text animate-fade-up">
                     <p class="hero-greeting">Hi, I'm</p>
                     <h1 class="hero-title">Muhammad <span class="highlight-red">Ammad</span> Younas</h1>
@@ -22,6 +22,14 @@ get_header();
                         <a href="#projects" class="btn btn-primary">View My Work &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
                         <a href="#contact" class="btn btn-secondary">Get in Touch &nbsp;<i class="fa-solid fa-envelope"></i></a>
                         <a href="https://drive.google.com/file/d/1nNG011n5-dohLoW5seiV78bAsG0getTi/view?usp=sharing" target="_blank" class="btn btn-secondary">Download CV &nbsp;<i class="fa-solid fa-download"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image-container animate-fade-up" style="animation-delay: 0.2s; text-align: center;">
+                    <div class="hero-image-wrapper glass-card" style="display: inline-block; padding: 20px; border-radius: 50%; width: 100%; max-width: 350px; aspect-ratio: 1/1; position: relative;">
+                        <!-- Placeholder for Person Pic -->
+                        <div class="image-placeholder" style="width: 100%; height: 100%; border-radius: 50%; background: rgba(255, 51, 51, 0.1); display: flex; align-items: center; justify-content: center; overflow: hidden; border: 2px dashed var(--color-red);">
+                            <i class="fa-solid fa-user-astronaut" style="font-size: 7rem; color: var(--color-red); opacity: 0.5;"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -39,27 +47,6 @@ get_header();
                         <h3>Aspiring Developer with a passion for problem-solving</h3>
                         <p>I am actively developing my skills across the software development lifecycle, including UI design, feature implementation, backend integration, performance optimization and testing.</p>
                         <p>Alongside Android development, I have hands-on experience in web scraping, automation and desktop application development, which strengthens my technical foundation.</p>
-                        
-                        <div class="education-box mt-4">
-                            <h4><i class="fa-solid fa-graduation-cap highlight-red"></i> Education</h4>
-                            <p><strong>The University of Lahore</strong><br>
-                            Bachelor of Science in Computer Science (BSCS)<br>
-                            <em>Nov 2022 - Aug 2026</em></p>
-                            <a href="https://drive.google.com/file/d/1SL44XruiowFVh9g0n_PjtN03EcVX1Oqx/view?usp=sharing" target="_blank" class="btn-cert mt-2"><i class="fa-solid fa-eye"></i> View Transcript</a>
-                        </div>
-                        <div class="certification-box mt-3">
-                            <h4><i class="fa-solid fa-certificate highlight-orange"></i> Certifications & Experience</h4>
-                            <ul class="cert-list">
-                                <li>
-                                    <span>Defronix Certified Junior Security Practitioner (DCjSP)</span>
-                                    <a href="https://drive.google.com/file/d/1Ohfpn9g187XD9tKTaKcCiDj4wL6747lT/view?usp=sharing" target="_blank" class="btn-cert-small"><i class="fa-solid fa-eye"></i></a>
-                                </li>
-                                <li>
-                                    <span>Internship at CodSoft</span>
-                                    <a href="https://drive.google.com/file/d/1ALY-1tRmbGh2cSTOCn98DuiJf8O_Ltej/view?usp=sharing" target="_blank" class="btn-cert-small"><i class="fa-solid fa-eye"></i></a>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
                     <div class="about-image-container animate-fade-up" style="animation-delay: 0.2s;">
                         <div class="about-image-wrapper">
@@ -105,6 +92,52 @@ get_header();
                                         </div>
                                     </a>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- JOURNEY/TIMELINE SECTION -->
+        <section id="journey" class="journey-section section-padding">
+            <div class="container">
+                <div class="section-heading text-center animate-fade-up">
+                    <h2 class="section-title">My <span class="highlight-red">Journey</span></h2>
+                    <div class="section-line mx-auto"></div>
+                </div>
+                
+                <div class="timeline-grid grid-2-col mt-5">
+                    <!-- Education Column -->
+                    <div class="timeline-col animate-fade-up" style="animation-delay: 0.1s;">
+                        <h3 class="timeline-title mb-4"><i class="fa-solid fa-graduation-cap highlight-red"></i> Education</h3>
+                        <div class="timeline">
+                            <div class="timeline-item glass-card">
+                                <div class="timeline-dot"></div>
+                                <h4>Bachelor of Science in Computer Science (BSCS)</h4>
+                                <h5><span class="highlight-red">University:</span> The University of Lahore</h5>
+                                <span class="timeline-date">Nov 2022 - Aug 2026</span>
+                                <br>
+                                <a href="https://drive.google.com/file/d/1SL44XruiowFVh9g0n_PjtN03EcVX1Oqx/view?usp=sharing" target="_blank" class="btn-cert mt-3"><i class="fa-solid fa-eye"></i> View Transcript</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Experience Column -->
+                    <div class="timeline-col animate-fade-up" style="animation-delay: 0.2s;">
+                        <h3 class="timeline-title mb-4"><i class="fa-solid fa-briefcase highlight-orange"></i> Experience & Certifications</h3>
+                        <div class="timeline">
+                            <div class="timeline-item glass-card">
+                                <div class="timeline-dot"></div>
+                                <h4>Internship</h4>
+                                <h5><span class="highlight-orange">Company:</span> CodSoft</h5>
+                                <a href="https://drive.google.com/file/d/1ALY-1tRmbGh2cSTOCn98DuiJf8O_Ltej/view?usp=sharing" target="_blank" class="btn-cert-small mt-2"><i class="fa-solid fa-eye"></i> View Certificate</a>
+                            </div>
+                            <div class="timeline-item glass-card">
+                                <div class="timeline-dot"></div>
+                                <h4>Defronix Certified Junior Security Practitioner (DCjSP)</h4>
+                                <h5><span class="highlight-orange">Company:</span> Defronix</h5>
+                                <a href="https://drive.google.com/file/d/1Ohfpn9g187XD9tKTaKcCiDj4wL6747lT/view?usp=sharing" target="_blank" class="btn-cert-small mt-2"><i class="fa-solid fa-eye"></i> View Certificate</a>
                             </div>
                         </div>
                     </div>
