@@ -113,7 +113,7 @@ get_header();
                     <div class="section-line mx-auto"></div>
                 </div>
                 
-                <div class="timeline-grid grid-2-col mt-5">
+                <div class="timeline-grid mt-5">
                     <!-- Education Column -->
                     <div class="timeline-col animate-fade-up" style="animation-delay: 0.1s;">
                         <h3 class="timeline-title mb-4"><i class="fa-solid fa-graduation-cap highlight-red"></i> Education</h3>
@@ -131,7 +131,7 @@ get_header();
                     
                     <!-- Experience Column -->
                     <div class="timeline-col animate-fade-up" style="animation-delay: 0.2s;">
-                        <h3 class="timeline-title mb-4"><i class="fa-solid fa-briefcase highlight-orange"></i> Experience & Certifications</h3>
+                        <h3 class="timeline-title mb-4"><i class="fa-solid fa-briefcase highlight-orange"></i> Experience</h3>
                         
                         <div class="timeline">
                             <div class="timeline-item glass-card">
@@ -165,7 +165,11 @@ get_header();
                                 </div>
                             </div>
                         </div>
+                    </div>
 
+                    <!-- Certifications Column -->
+                    <div class="timeline-col timeline-orange animate-fade-up" style="animation-delay: 0.3s;">
+                        <h3 class="timeline-title mb-4"><i class="fa-solid fa-certificate highlight-orange"></i> Certifications</h3>
                         <div class="timeline">
                             <div class="timeline-item glass-card">
                                 <div class="timeline-dot"></div>
@@ -176,7 +180,6 @@ get_header();
                                 <a href="https://drive.google.com/file/d/1Ohfpn9g187XD9tKTaKcCiDj4wL6747lT/view?usp=sharing" target="_blank" class="btn-cert-small mt-2"><i class="fa-solid fa-file-lines"></i> View Certificate</a>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
