@@ -1102,7 +1102,7 @@ body.light-mode .form-group textarea {
     width: 85%;
     height: 85%;
     max-width: 1000px;
-    background: var(--bg-dark);
+    background: #0a0a0c;
     border-radius: 12px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
     border: 1px solid var(--glass-border);
@@ -1132,6 +1132,10 @@ body.light-mode .form-group textarea {
 
 body.light-mode .preview-modal {
     background-color: rgba(255, 255, 255, 0.85);
+}
+
+body.light-mode .preview-modal-content {
+    background: #ffffff;
 }
 
 body.light-mode .preview-modal-close {

@@ -21,7 +21,7 @@ get_header();
                     <div class="hero-actions">
                         <a href="#projects" class="btn btn-primary">View My Work &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
                         <a href="#contact" class="btn btn-secondary">Get in Touch &nbsp;<i class="fa-solid fa-envelope"></i></a>
-                        <a href="https://drive.google.com/file/d/1nNG011n5-dohLoW5seiV78bAsG0getTi/view?usp=sharing" target="_blank" class="btn btn-secondary">Download CV &nbsp;<i class="fa-solid fa-download"></i></a>
+                        <a href="<?php echo get_template_directory_uri(); ?>/assets/documents/Muhammad_Ammad_Younas_CV.pdf" target="_blank" class="btn btn-secondary">Download CV &nbsp;<i class="fa-solid fa-download"></i></a>
                     </div>
                 </div>
                 <div class="hero-image-container animate-fade-up" style="animation-delay: 0.2s; text-align: center;">
@@ -118,7 +118,7 @@ get_header();
                                 <h5><span class="highlight-red">University:</span> The University of Lahore</h5>
                                 <span class="timeline-date">Nov 2022 - Aug 2026</span>
                                 <br>
-                                <a href="https://drive.google.com/file/d/1SL44XruiowFVh9g0n_PjtN03EcVX1Oqx/view?usp=sharing" target="_blank" class="btn-cert mt-3"><i class="fa-solid fa-eye"></i> View Transcript</a>
+                                <a href="<?php echo get_template_directory_uri(); ?>/assets/documents/Transcript.pdf" target="_blank" class="btn-cert mt-3"><i class="fa-solid fa-eye"></i> View Transcript</a>
                             </div>
                         </div>
                     </div>
@@ -131,13 +131,13 @@ get_header();
                                 <div class="timeline-dot"></div>
                                 <h4>Internship</h4>
                                 <h5><span class="highlight-orange">Company:</span> CodSoft</h5>
-                                <a href="https://drive.google.com/file/d/1ALY-1tRmbGh2cSTOCn98DuiJf8O_Ltej/view?usp=sharing" target="_blank" class="btn-cert-small mt-2"><i class="fa-solid fa-eye"></i> View Certificate</a>
+                                <a href="<?php echo get_template_directory_uri(); ?>/assets/documents/Internship%20at%20CodeSoft.jpg" target="_blank" class="btn-cert-small mt-2"><i class="fa-solid fa-eye"></i> View Certificate</a>
                             </div>
                             <div class="timeline-item glass-card">
                                 <div class="timeline-dot"></div>
                                 <h4>Defronix Certified Junior Security Practitioner (DCjSP)</h4>
                                 <h5><span class="highlight-orange">Company:</span> Defronix</h5>
-                                <a href="https://drive.google.com/file/d/1Ohfpn9g187XD9tKTaKcCiDj4wL6747lT/view?usp=sharing" target="_blank" class="btn-cert-small mt-2"><i class="fa-solid fa-eye"></i> View Certificate</a>
+                                <a href="<?php echo get_template_directory_uri(); ?>/assets/documents/DCjSP.jpg" target="_blank" class="btn-cert-small mt-2"><i class="fa-solid fa-eye"></i> View Certificate</a>
                             </div>
                         </div>
                     </div>

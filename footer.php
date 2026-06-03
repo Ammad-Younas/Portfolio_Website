@@ -36,7 +36,7 @@
         <div id="preview-modal" class="preview-modal">
             <div class="preview-modal-content">
                 <span class="preview-modal-close">&times;</span>
-                <iframe id="preview-iframe" src="" frameborder="0"></iframe>
+                <div id="preview-container" style="width: 100%; height: 100%;"></div>
             </div>
         </div>
 	</footer>

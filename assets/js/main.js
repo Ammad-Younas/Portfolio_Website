@@ -196,33 +196,63 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Preview Modal
-    const certLinks = document.querySelectorAll('.btn-cert, .btn-cert-small');
+    const certLinks = document.querySelectorAll('.btn-cert, .btn-cert-small, a[href$=".pdf"], a[href$=".jpg"]');
     const modal = document.getElementById('preview-modal');
-    const iframe = document.getElementById('preview-iframe');
+    const modalContent = document.querySelector('.preview-modal-content');
     const closeBtn = document.querySelector('.preview-modal-close');
 
-    if (modal && iframe) {
+    if (modal && modalContent) {
+        let viewerElement = null;
+
         certLinks.forEach(link => {
             link.addEventListener('click', (e) => {
                 e.preventDefault();
                 let url = link.getAttribute('href');
-                if (url && url.includes('drive.google.com')) {
-                    url = url.replace('/view', '/preview');
+                
+                // Clean up previous viewer
+                if (viewerElement) {
+                    viewerElement.remove();
                 }
-                iframe.src = url;
+
+                if (url && url.toLowerCase().endsWith('.jpg')) {
+                    // Create image element for JPGs
+                    viewerElement = document.createElement('img');
+                    viewerElement.src = url;
+                    viewerElement.style.width = '100%';
+                    viewerElement.style.height = '100%';
+                    viewerElement.style.objectFit = 'contain';
+                    viewerElement.style.borderRadius = '12px';
+                } else {
+                    // Create object for PDFs
+                    viewerElement = document.createElement('object');
+                    viewerElement.data = url;
+                    viewerElement.type = 'application/pdf';
+                    viewerElement.style.width = '100%';
+                    viewerElement.style.height = '100%';
+                    viewerElement.style.border = 'none';
+                    viewerElement.style.borderRadius = '12px';
+                    viewerElement.innerHTML = `<p style="text-align:center; padding: 50px;">Unable to display PDF. <a href="${url}" target="_blank" style="color:var(--color-orange); text-decoration:underline;">Download it here</a>.</p>`;
+                }
+
+                const container = document.getElementById('preview-container');
+                container.appendChild(viewerElement);
                 modal.style.display = 'block';
             });
         });
         
         closeBtn.addEventListener('click', () => {
             modal.style.display = 'none';
-            iframe.src = '';
+            if (viewerElement) {
+                viewerElement.src = '';
+            }
         });
         
         window.addEventListener('click', (e) => {
             if (e.target === modal) {
                 modal.style.display = 'none';
-                iframe.src = '';
+                if (viewerElement) {
+                    viewerElement.src = '';
+                }
             }
         });
     }
