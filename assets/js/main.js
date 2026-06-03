@@ -223,9 +223,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     viewerElement.style.objectFit = 'contain';
                     viewerElement.style.borderRadius = '12px';
                 } else {
-                    // Create object for PDFs
-                    viewerElement = document.createElement('object');
-                    viewerElement.data = url;
+                    // Create embed for PDFs
+                    viewerElement = document.createElement('embed');
+                    viewerElement.src = url;
                     viewerElement.type = 'application/pdf';
                     viewerElement.style.width = '100%';
                     viewerElement.style.height = '100%';
