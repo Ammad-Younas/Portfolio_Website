@@ -1,5 +1,5 @@
 <?php
-require_once dirname(__FILE__, 7) . '/wp-load.php';
+require_once dirname(__DIR__, 3) . '/includes/functions.php';
 
 $json_path = dirname(__DIR__) . '/data/videos.json';
 $videos = [];

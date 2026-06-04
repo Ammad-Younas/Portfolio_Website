@@ -1,6 +1,6 @@
 <?php
 /* Template Name: Course Roadmap */
-require_once dirname(__FILE__, 6) . '/wp-load.php';
+require_once dirname(__DIR__, 2) . '/includes/functions.php';
 get_header();
 ?>
 <main id="primary" class="site-main">
