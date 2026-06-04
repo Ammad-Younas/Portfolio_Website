@@ -16,7 +16,7 @@ get_header();
         </div>
 
         <div class="container text-center animate-fade-up">
-            <h1 class="hero-title">Course <span class="highlight-orange">Roadmap</span></h1>
+            <h1 class="hero-title">My Learning <span class="highlight-orange">Roadmap</span></h1>
             <p class="hero-description mx-auto" style="max-width: 700px;">
                 Follow along with my learning journey. Select a module to start learning!
             </p>
@@ -32,7 +32,7 @@ get_header();
                 <!-- Roadmap Card 1 -->
                 <div class="project-card glass-card animate-fade-up" style="display: flex; flex-direction: column;">
                     <div class="project-content" style="padding: 30px;">
-                        <h3 class="project-title" style="font-size: 2rem;"><i class="fa-solid fa-graduation-cap highlight-red" style="margin-right: 12px;"></i> Phase 1: Foundation</h3>
+                        <h3 class="project-title" style="font-size: 2rem;"><i class="fa-solid fa-graduation-cap highlight-red" style="margin-right: 12px;"></i> Chapter 1: &nbsp; Android Basics</h3>
                         <p class="project-desc mt-3">
                             This module covers the core concepts and fundamental topics needed to build a strong base in development. Contains 37 video lessons ranging from beginner to intermediate.
                         </p>
@@ -42,7 +42,7 @@ get_header();
                             <span>37 Lessons</span>
                         </div>
                         <div class="project-links mt-4">
-                            <a href="<?php echo esc_url( home_url( '/src/courses/player/course_player.php?course=android-development&phase=phase-1-foundation' ) ); ?>" class="btn btn-primary" style="width: 100%; text-align: center;">
+                            <a href="<?php echo esc_url( home_url( '/src/courses/player/course_player.php?course=android-development&chapter=chapter-1-android-basics' ) ); ?>" class="btn btn-primary" style="width: 100%; text-align: center;">
                                 <i class="fa-solid fa-play" style="margin-right: 12px;"></i> Start Learning
                             </a>
                         </div>
