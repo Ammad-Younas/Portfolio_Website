@@ -13,7 +13,7 @@ get_header();
             </div>
 
             <div class="project-detail-content glass-card mt-4 animate-fade-up" style="animation-delay: 0.1s;">
-                <img src="../../assets/images/projects_header_images/yt_as_storage.png" alt="YouTube as Unlimited Storage" style="width: 100%; height: 400px; object-fit: cover; border-radius: 10px; margin-bottom: 30px;">
+                <img src="<?php echo esc_url( home_url( '/assets/' ) ); ?>images/projects_header_images/yt_as_storage.png" alt="YouTube as Unlimited Storage" style="width: 100%; height: 400px; object-fit: cover; border-radius: 10px; margin-bottom: 30px;">
                 
                 <h3>About This Project</h3>
                 <p>The YouTube As Unlimited Storage project is an inventive Python-based tool designed to utilize video hosting infrastructure as a free, infinite cloud storage solution. The core of the project relies on the convert_and_reverse.py script. This script functions as a two-way processing engine: it encodes standard data files into a video format suitable for uploading to YouTube, and it reverses the process to decode downloaded videos back into their original file formats.</p>

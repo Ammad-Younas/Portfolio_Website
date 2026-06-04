@@ -42,7 +42,7 @@ get_header();
                             <span>37 Lessons</span>
                         </div>
                         <div class="project-links mt-4">
-                            <a href="<?php echo esc_url( get_template_directory_uri() . '/src/courses/player/course_player.php?course=android-development&phase=phase-1-foundation' ); ?>" class="btn btn-primary" style="width: 100%; text-align: center;">
+                            <a href="<?php echo esc_url( home_url( '/src/courses/player/course_player.php?course=android-development&phase=phase-1-foundation' ) ); ?>" class="btn btn-primary" style="width: 100%; text-align: center;">
                                 <i class="fa-solid fa-play" style="margin-right: 12px;"></i> Start Learning
                             </a>
                         </div>

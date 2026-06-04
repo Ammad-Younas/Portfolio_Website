@@ -13,7 +13,7 @@ get_header();
             </div>
 
             <div class="project-detail-content glass-card mt-4 animate-fade-up" style="animation-delay: 0.1s;">
-                <img src="../../assets/images/projects_header_images/under_byte.jpg" alt="Under Byte" style="width: 100%; height: 400px; object-fit: cover; border-radius: 10px; margin-bottom: 30px;">
+                <img src="<?php echo esc_url( home_url( '/assets/' ) ); ?>images/projects_header_images/under_byte.jpg" alt="Under Byte" style="width: 100%; height: 400px; object-fit: cover; border-radius: 10px; margin-bottom: 30px;">
                 
                 <h3>About This Project</h3>
                 <p>Structured as a comprehensive Final Year Project, Under Byte is a native Android chat application built to showcase modern mobile development practices. Developed entirely in Kotlin, the application features a robust messaging system where users can seamlessly create or join dedicated chat rooms. It demonstrates strong architectural implementation through rich media support, allowing users to share files, preview media, and record or play audio directly within the interface. To ensure performance, the app utilizes a local Room database for media caching and data persistence, paired with Retrofit for efficient backend API communication. A unique technical highlight of the application is its custom steganography integration, providing specialized tools to embed and process hidden data within media files.</p>

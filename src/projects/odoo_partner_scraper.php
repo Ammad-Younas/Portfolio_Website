@@ -13,7 +13,7 @@ get_header();
             </div>
 
             <div class="project-detail-content glass-card mt-4 animate-fade-up" style="animation-delay: 0.1s;">
-                <img src="../../assets/images/projects_header_images/odoo_partner_scraper.jpg" alt="Odoo Partner Scraper" style="width: 100%; height: 400px; object-fit: cover; border-radius: 10px; margin-bottom: 30px;">
+                <img src="<?php echo esc_url( home_url( '/assets/' ) ); ?>images/projects_header_images/odoo_partner_scraper.jpg" alt="Odoo Partner Scraper" style="width: 100%; height: 400px; object-fit: cover; border-radius: 10px; margin-bottom: 30px;">
                 
                 <h3>About This Project</h3>
                 <p>The Odoo Scraper is a Python-based data extraction tool specifically built to gather partner information from Odoo environments. The core functionality is driven by the odoo_partner_scraper.py script, which automates the retrieval process. The project is structured with a dedicated requirements.txt file to seamlessly manage Python dependencies and ensure easy setup and execution for web scraping tasks.</p>

@@ -13,7 +13,7 @@ get_header();
             </div>
 
             <div class="project-detail-content glass-card mt-4 animate-fade-up" style="animation-delay: 0.1s;">
-                <img src="../../assets/images/projects_header_images/portable_exe_gen.png" alt="Portable EXE Generator" style="width: 100%; height: 400px; object-fit: cover; border-radius: 10px; margin-bottom: 30px;">
+                <img src="<?php echo esc_url( home_url( '/assets/' ) ); ?>images/projects_header_images/portable_exe_gen.png" alt="Portable EXE Generator" style="width: 100%; height: 400px; object-fit: cover; border-radius: 10px; margin-bottom: 30px;">
                 
                 <h3>About This Project</h3>
                 <p>The Portable EXE Generator is a software packaging utility centered around a Python script named py2exe.pyw. This tool is designed to convert and compile code into standalone, portable executable files. To facilitate the creation of these portable packages, the project incorporates a Default.SFX self-extracting archive module. The repository also contains interface assets such as files_img.png and a custom Logo.ico located in the icon directory, alongside a generated executable file named cyber-spider.exe.</p>

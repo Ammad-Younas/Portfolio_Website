@@ -4,7 +4,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-	<link rel="icon" href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/favicon.png" type="image/png">
+	<link rel="icon" href="<?php echo esc_url( home_url( '/assets/' ) ); ?>images/favicon.png" type="image/png">
 
 	<?php wp_head(); ?>
 </head>
@@ -40,7 +40,7 @@
                             </button>
                         </li>
                         <li>
-                            <a href="<?php echo esc_url( wp_make_link_relative( get_template_directory_uri() . '/src/courses/course_roadmap.php' ) ); ?>" aria-label="Course Roadmap" style="font-size: 1.2rem; cursor: pointer; transition: color 0.3s; padding: 0;">
+                            <a href="<?php echo esc_url( home_url( '/src/courses/course_roadmap.php' ) ); ?>" aria-label="Course Roadmap" style="font-size: 1.2rem; cursor: pointer; transition: color 0.3s; padding: 0;">
                                 <i class="fa-solid fa-graduation-cap"></i>
                             </a>
                         </li>

@@ -20,7 +20,7 @@ get_header();
         <div class="container-fluid" style="width: 100%; max-width: 100%; padding: 0 20px;">
             
             <div class="player-header mb-4">
-                <a href="<?php echo esc_url( wp_make_link_relative( get_template_directory_uri() . '/src/courses/course_roadmap.php' ) ); ?>" class="btn-cert-small" style="display: inline-block; margin-bottom: 20px;"><i class="fa-solid fa-arrow-left"></i> Back to Roadmap</a>
+                <a href="<?php echo esc_url( home_url( '/src/courses/course_roadmap.php' ) ); ?>" class="btn-cert-small" style="display: inline-block; margin-bottom: 20px;"><i class="fa-solid fa-arrow-left"></i> Back to Roadmap</a>
                 <h2 class="section-title" id="course-title"><?php echo esc_html($course_phase); ?></h2>
             </div>
 

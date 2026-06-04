@@ -49,10 +49,10 @@ function ammad_portfolio_scripts() {
     wp_enqueue_style( 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css', array(), '6.4.0' );
 
 	// Custom CSS
-	wp_enqueue_style( 'ammad-portfolio-main', get_template_directory_uri() . '/assets/css/main.css', array(), filemtime( get_template_directory() . '/assets/css/main.css' ) );
+	wp_enqueue_style( 'ammad-portfolio-main', home_url( '/assets/css/main.css' ), array(), filemtime( get_template_directory() . '/assets/css/main.css' ) );
 
 	// Custom JS
-	wp_enqueue_script( 'ammad-portfolio-main-js', get_template_directory_uri() . '/assets/js/main.js', array(), filemtime( get_template_directory() . '/assets/js/main.js' ), true );
+	wp_enqueue_script( 'ammad-portfolio-main-js', home_url( '/assets/js/main.js' ), array(), filemtime( get_template_directory() . '/assets/js/main.js' ), true );
 
     // Localize script for AJAX
     wp_localize_script( 'ammad-portfolio-main-js', 'portfolio_ajax', array(

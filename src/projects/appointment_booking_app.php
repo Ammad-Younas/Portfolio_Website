@@ -13,7 +13,7 @@ get_header();
             </div>
 
             <div class="project-detail-content glass-card mt-4 animate-fade-up" style="animation-delay: 0.1s;">
-                <img src="../../assets/images/projects_header_images/appointment_booking_app.jpg" alt="Appointment Booking App" style="width: 100%; height: 400px; object-fit: cover; border-radius: 10px; margin-bottom: 30px;">
+                <img src="<?php echo esc_url( home_url( '/assets/' ) ); ?>images/projects_header_images/appointment_booking_app.jpg" alt="Appointment Booking App" style="width: 100%; height: 400px; object-fit: cover; border-radius: 10px; margin-bottom: 30px;">
                 
                 <h3>About This Project</h3>
                 <p>The Medical Appointment Booking App is a robust, cross-platform solution developed with the Flutter framework and powered by a Firebase backend. Designed to bridge the gap between healthcare professionals and patients, the application offers distinct, tailored experiences for both user types.</p>

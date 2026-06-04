@@ -13,7 +13,7 @@ get_header();
             </div>
 
             <div class="project-detail-content glass-card mt-4 animate-fade-up" style="animation-delay: 0.1s;">
-                <img src="../../assets/images/projects_header_images/recipe_app.jpg" alt="Recipe App" style="width: 100%; height: 400px; object-fit: cover; border-radius: 10px; margin-bottom: 30px;">
+                <img src="<?php echo esc_url( home_url( '/assets/' ) ); ?>images/projects_header_images/recipe_app.jpg" alt="Recipe App" style="width: 100%; height: 400px; object-fit: cover; border-radius: 10px; margin-bottom: 30px;">
                 
                 <h3>About This Project</h3>
                 <p>The Recipe App is a native Android application designed to help users discover and explore various culinary categories and recipes. Developed using Kotlin, the project demonstrates modern Android architecture by utilizing a MainViewModel for robust state management and seamless UI updates. The application actively connects with external data sources, employing an ApiService to fetch dynamic data and structure it using custom Category models. Featuring a clean user interface built with dedicated screen components like RecipeScreen and custom theme configurations, this application provides an intuitive and engaging experience for food enthusiasts.</p>

@@ -28,7 +28,7 @@ get_header();
                     <div class="hero-image-wrapper glass-card" style="display: inline-block; padding: 20px; border-radius: 50%; width: 100%; max-width: 350px; aspect-ratio: 1/1; position: relative;">
                         <!-- Profile Pic -->
                         <div class="image-placeholder" style="width: 100%; height: 100%; border-radius: 50%; display: flex; align-items: center; justify-content: center; overflow: hidden; border: 2px solid var(--color-red); background-color: #EFD6AE;">
-                            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/avatar/Ammad.png" alt="Ammad Younas" style="width: 100%; height: 100%; object-fit: contain; margin-top: 40px;">
+                            <img src="<?php echo esc_url( home_url( '/assets/' ) ); ?>avatar/Ammad.png" alt="Ammad Younas" style="width: 100%; height: 100%; object-fit: contain; margin-top: 40px;">
                         </div>
                     </div>
                 </div>
@@ -196,23 +196,23 @@ get_header();
                 <div class="tech-stack-grid animate-fade-up">
                     <?php
                     $tech_stack = [
-                        ['name' => 'Kotlin', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/kotlin.svg'],
-                        ['name' => 'Jetpack Compose', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/jetpackcompose.svg'],
-                        ['name' => 'Python', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/python.svg'],
-                        ['name' => 'Dart', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/dart.svg'],
-                        ['name' => 'Flutter', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/flutter.svg'],
-                        ['name' => 'FastAPI', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/fastapi.svg'],
-                        ['name' => 'Redis', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/redis.svg'],
-                        ['name' => 'SQL', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/sql.svg'],
-                        ['name' => 'SQLite', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/sqlite.svg'],
-                        ['name' => 'Firebase', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/firebase.svg'],
-                        ['name' => 'Git', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/git.svg'],
-                        ['name' => 'GitHub', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/github.svg'],
-                        ['name' => 'REST APIs', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/rest-apis.svg'],
-                        ['name' => 'Selenium', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/selenium.svg'],
-                        ['name' => 'Scrapy', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/scrapy.svg'],
-                        ['name' => 'Postman', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/postman.svg'],
-                        ['name' => 'Linux', 'icon' => get_template_directory_uri() . '/assets/images/tech_stack/linux.svg'],
+                        ['name' => 'Kotlin', 'icon' => home_url( '/assets/images/tech_stack/kotlin.svg' )],
+                        ['name' => 'Jetpack Compose', 'icon' => home_url( '/assets/images/tech_stack/jetpackcompose.svg' )],
+                        ['name' => 'Python', 'icon' => home_url( '/assets/images/tech_stack/python.svg' )],
+                        ['name' => 'Dart', 'icon' => home_url( '/assets/images/tech_stack/dart.svg' )],
+                        ['name' => 'Flutter', 'icon' => home_url( '/assets/images/tech_stack/flutter.svg' )],
+                        ['name' => 'FastAPI', 'icon' => home_url( '/assets/images/tech_stack/fastapi.svg' )],
+                        ['name' => 'Redis', 'icon' => home_url( '/assets/images/tech_stack/redis.svg' )],
+                        ['name' => 'SQL', 'icon' => home_url( '/assets/images/tech_stack/sql.svg' )],
+                        ['name' => 'SQLite', 'icon' => home_url( '/assets/images/tech_stack/sqlite.svg' )],
+                        ['name' => 'Firebase', 'icon' => home_url( '/assets/images/tech_stack/firebase.svg' )],
+                        ['name' => 'Git', 'icon' => home_url( '/assets/images/tech_stack/git.svg' )],
+                        ['name' => 'GitHub', 'icon' => home_url( '/assets/images/tech_stack/github.svg' )],
+                        ['name' => 'REST APIs', 'icon' => home_url( '/assets/images/tech_stack/rest-apis.svg' )],
+                        ['name' => 'Selenium', 'icon' => home_url( '/assets/images/tech_stack/selenium.svg' )],
+                        ['name' => 'Scrapy', 'icon' => home_url( '/assets/images/tech_stack/scrapy.svg' )],
+                        ['name' => 'Postman', 'icon' => home_url( '/assets/images/tech_stack/postman.svg' )],
+                        ['name' => 'Linux', 'icon' => home_url( '/assets/images/tech_stack/linux.svg' )],
                     ];
                     
                     foreach ($tech_stack as $tech) {
@@ -243,7 +243,7 @@ get_header();
                 <div class="projects-grid">
                     <!-- Project 1 -->
                     <div class="project-card glass-card animate-fade-up project-item" data-category="android" style="animation-delay: 0.1s;">
-                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/projects_header_images/appointment_booking_app.jpg" alt="Appointment Booking App" class="project-img">
+                        <img src="<?php echo esc_url( home_url( '/assets/' ) ); ?>images/projects_header_images/appointment_booking_app.jpg" alt="Appointment Booking App" class="project-img">
                         <div class="project-content">
                             <h3 class="project-title">Appointment Booking App</h3>
                             <p class="project-desc">A cross-platform Flutter application designed to seamlessly connect patients with healthcare professionals by appointment scheduling and management.</p>
@@ -255,14 +255,14 @@ get_header();
                             </div>
                             <div class="project-links" style="display: flex; gap: 15px; flex-wrap: wrap;">
                                 <a href="https://github.com/Ammad-Younas/Appointment_Booking_App" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> View Repository</a>
-                                <a href="<?php echo esc_url( get_template_directory_uri() . '/src/projects/appointment_booking_app.php' ); ?>" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</a>
+                                <a href="<?php echo esc_url( home_url( '/src/projects/appointment_booking_app.php' )  ); ?>" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Project 2 -->
                     <div class="project-card glass-card animate-fade-up project-item" data-category="android" style="animation-delay: 0.2s;">
-                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/projects_header_images/under_byte.jpg" alt="Under Byte" class="project-img">
+                        <img src="<?php echo esc_url( home_url( '/assets/' ) ); ?>images/projects_header_images/under_byte.jpg" alt="Under Byte" class="project-img">
                         <div class="project-content">
                             <h3 class="project-title">Under Byte</h3>
                             <p class="project-desc">An Android messaging app combining room-based chat functionality with advanced steganography integration.</p>
@@ -274,14 +274,14 @@ get_header();
                             </div>
                             <div class="project-links" style="display: flex; gap: 15px; flex-wrap: wrap;">
                                 <a href="https://github.com/Ammad-Younas/Under-Byte" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> View Repository</a>
-                                <a href="<?php echo esc_url( get_template_directory_uri() . '/src/projects/under_byte.php' ); ?>" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</a>
+                                <a href="<?php echo esc_url( home_url( '/src/projects/under_byte.php' )  ); ?>" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Project 3 -->
                     <div class="project-card glass-card animate-fade-up project-item" data-category="android" style="animation-delay: 0.3s;">
-                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/projects_header_images/recipe_app.jpg" alt="Recipe App" class="project-img">
+                        <img src="<?php echo esc_url( home_url( '/assets/' ) ); ?>images/projects_header_images/recipe_app.jpg" alt="Recipe App" class="project-img">
                         <div class="project-content">
                             <h3 class="project-title">Recipe App</h3>
                             <p class="project-desc">An Android application developed in Kotlin that fetches and displays recipe categories via modern API integration.</p>
@@ -293,14 +293,14 @@ get_header();
                             </div>
                             <div class="project-links" style="display: flex; gap: 15px; flex-wrap: wrap;">
                                 <a href="https://github.com/Ammad-Younas/Android_Development_Journey/tree/main/RecipeApp" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> View Repository</a>
-                                <a href="<?php echo esc_url( get_template_directory_uri() . '/src/projects/recipe_app.php' ); ?>" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</a>
+                                <a href="<?php echo esc_url( home_url( '/src/projects/recipe_app.php' )  ); ?>" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</a>
                             </div>
                         </div>
                     </div>
                     
                     <!-- Project 4 -->
                     <div class="project-card glass-card animate-fade-up project-item" data-category="python" style="animation-delay: 0.4s;" id="odoo_scraper">
-                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/projects_header_images/odoo_partner_scraper.jpg" alt="Odoo Partner Scraper" class="project-img">
+                        <img src="<?php echo esc_url( home_url( '/assets/' ) ); ?>images/projects_header_images/odoo_partner_scraper.jpg" alt="Odoo Partner Scraper" class="project-img">
                         <div class="project-content">
                             <h3 class="project-title">Odoo Partner Scraper</h3>
                             <p class="project-desc">A Python automation utility built to extract partner data from Odoo platforms, driven by a central scraping script and managed via standard Python dependency files.</p>
@@ -312,14 +312,14 @@ get_header();
                             </div>
                             <div class="project-links" style="display: flex; gap: 15px; flex-wrap: wrap;">
                                 <a href="https://github.com/Ammad-Younas/Odoo_Scraper" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> View Repository</a>
-                                <a href="<?php echo esc_url( get_template_directory_uri() . '/src/projects/odoo_partner_scraper.php' ); ?>" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</a>
+                                <a href="<?php echo esc_url( home_url( '/src/projects/odoo_partner_scraper.php' )  ); ?>" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Project 5 -->
                     <div class="project-card glass-card animate-fade-up project-item" data-category="python" style="animation-delay: 0.5s;">
-                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/projects_header_images/yt_as_storage.png" alt="Youtube As Unlimited Storage" class="project-img">
+                        <img src="<?php echo esc_url( home_url( '/assets/' ) ); ?>images/projects_header_images/yt_as_storage.png" alt="Youtube As Unlimited Storage" class="project-img">
                         <div class="project-content">
                             <h3 class="project-title">YouTube As Unlimited Storage</h3>
                             <p class="project-desc">A Python tool designed to encode files into videos and decode them back, effectively transforming YouTube into an unlimited storage drive.</p>
@@ -330,14 +330,14 @@ get_header();
                             </div>
                             <div class="project-links" style="display: flex; gap: 15px; flex-wrap: wrap;">
                                 <a href="https://github.com/Ammad-Younas/Youtube_As_Unlimited_Storage" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> View Repository</a>
-                                <a href="<?php echo esc_url( get_template_directory_uri() . '/src/projects/youtube_as_unlimited_storage.php' ); ?>" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</a>
+                                <a href="<?php echo esc_url( home_url( '/src/projects/youtube_as_unlimited_storage.php' )  ); ?>" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Project 6 -->
                     <div class="project-card glass-card animate-fade-up project-item" data-category="python" style="animation-delay: 0.6s;">
-                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/projects_header_images/portable_exe_gen.png" alt="Portable EXE Generator" class="project-img">
+                        <img src="<?php echo esc_url( home_url( '/assets/' ) ); ?>images/projects_header_images/portable_exe_gen.png" alt="Portable EXE Generator" class="project-img">
                         <div class="project-content">
                             <h3 class="project-title">Portable EXE Generator</h3>
                             <p class="project-desc">A software tool built with Python for generating standalone portable executables using self-extracting archive modules.</p>
@@ -349,7 +349,7 @@ get_header();
                             </div>
                             <div class="project-links" style="display: flex; gap: 15px; flex-wrap: wrap;">
                                 <a href="https://github.com/Ammad-Younas/Portable_EXE_Generator" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> View Repository</a>
-                                <a href="<?php echo esc_url( get_template_directory_uri() . '/src/projects/portable_exe_gen.php' ); ?>" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</a>
+                                <a href="<?php echo esc_url( home_url( '/src/projects/portable_exe_gen.php' )  ); ?>" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</a>
                             </div>
                         </div>
                     </div>
