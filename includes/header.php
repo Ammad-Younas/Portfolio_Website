@@ -6,6 +6,7 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<link rel="icon" href="<?php echo esc_url( home_url( '/assets/images/favicon.png' ) ); ?>?v=<?php echo filemtime( get_template_directory() . '/assets/images/favicon.png' ); ?>" type="image/png">
 
+	<title><?php echo isset($page_title) ? htmlspecialchars($page_title) . ' | MADI Wist' : 'MADI Wist - Android & Python Developer'; ?></title>
 	<?php wp_head(); ?>
 </head>
 
