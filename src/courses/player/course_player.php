@@ -101,6 +101,12 @@ get_header();
         }
     }
 
+    .playlist-items {
+        overflow-y: auto;
+        padding: 10px;
+        flex: 1;
+        min-height: 0;
+    }
     .playlist-items::-webkit-scrollbar {
         width: 6px;
     }

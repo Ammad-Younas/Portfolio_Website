@@ -36,6 +36,10 @@ function esc_html_e($text, $domain = '') {
     echo esc_html($text);
 }
 
+function esc_js($text) {
+    return htmlspecialchars(addslashes($text), ENT_QUOTES, 'UTF-8');
+}
+
 function language_attributes() {
     echo 'lang="en"';
 }
