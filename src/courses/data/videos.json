@@ -1,0 +1,261 @@
+[
+    {
+        "id": 1,
+        "youtube_id": "YNJKj034TmY",
+        "title": "What is Android & How it Works? Introduction to Android with Full Information | Android Tutorial 1",
+        "duration": "17:53",
+        "description": "Enjoy What is Android &amp; How it Works? Introduction to Android with Full Information | Android Tutorial 1!"
+    },
+    {
+        "id": 2,
+        "youtube_id": "OWu2eF_EfBQ",
+        "title": "History of Android - Interesting Things You Didn't Know About Android | Android Tutorial 2",
+        "duration": "17:55",
+        "description": "Enjoy History of Android - Interesting Things You Didn&#39;t Know About Android | Android Tutorial 2!"
+    },
+    {
+        "id": 3,
+        "youtube_id": "wCR8cllp08U",
+        "title": "All Versions of Android| Android OS 1.5 to 11 | Android Tutorial #3",
+        "duration": "28:14",
+        "description": "Enjoy All Versions of Android| Android OS 1.5 to 11 | Android Tutorial #3!"
+    },
+    {
+        "id": 4,
+        "youtube_id": "eJPV5Tj_mx8",
+        "title": "What is IDE? (Integrated Development Environment) | Main Features of IDE #4",
+        "duration": "8:15",
+        "description": "Enjoy What is IDE? (Integrated Development Environment) | Main Features of IDE #4!"
+    },
+    {
+        "id": 5,
+        "youtube_id": "DhzZ7RfAupM",
+        "title": "How to Install & Setup Android Studio on Windows #5",
+        "duration": "25:31",
+        "description": "Enjoy How to Install &amp; Setup Android Studio on Windows #5!"
+    },
+    {
+        "id": 6,
+        "youtube_id": "jcax1h7Vzts",
+        "title": "How to Install & Setup Android Studio on Mac OS [HINDI] #6",
+        "duration": "10:09",
+        "description": "Enjoy How to Install &amp; Setup Android Studio on Mac OS [HINDI] #6!"
+    },
+    {
+        "id": 7,
+        "youtube_id": "xYN2FWYwBb4",
+        "title": "How to Install & Setup Android Studio on Linux [HINDI] #7",
+        "duration": "12:15",
+        "description": "Enjoy How to Install &amp; Setup Android Studio on Linux [HINDI] #7!"
+    },
+    {
+        "id": 8,
+        "youtube_id": "9wjpjlGn_So",
+        "title": "Programming Languages to learn for building an \"Android App\" (Java/Kotlin & XML)",
+        "duration": "15:07",
+        "description": "Enjoy Programming Languages to learn for building an &quot;Android App&quot; (Java/Kotlin &amp; XML)!"
+    },
+    {
+        "id": 9,
+        "youtube_id": "6GZ3ri-gguE",
+        "title": "ADB & AVD Explained in 8 Minutes | In-depth Information about ADB and AVD #9",
+        "duration": "8:25",
+        "description": "Enjoy ADB &amp; AVD Explained in 8 Minutes | In-depth Information about ADB and AVD #9!"
+    },
+    {
+        "id": 10,
+        "youtube_id": "ydwXiCSPl8w",
+        "title": "What is APK | Extension of Android App in Hindi | Android Tutorial #10",
+        "duration": "3:25",
+        "description": "Enjoy What is APK | Extension of Android App in Hindi | Android Tutorial #10!"
+    },
+    {
+        "id": 11,
+        "youtube_id": "V4rHUnWuoWA",
+        "title": "How to create your first Android App in Android Studio [Hindi] #11",
+        "duration": "45:24",
+        "description": "Enjoy How to create your first Android App in Android Studio [Hindi] #11!"
+    },
+    {
+        "id": 12,
+        "youtube_id": "6SLOB3WfVa4",
+        "title": "How to Run your App on a Virtual Device (AVD) - Android Studio [Hindi] #12",
+        "duration": "6:14",
+        "description": "Enjoy How to Run your App on a Virtual Device (AVD) - Android Studio [Hindi] #12!"
+    },
+    {
+        "id": 13,
+        "youtube_id": "QCHSDQzTRSQ",
+        "title": "How to Run your App on Real Android Device (ADB) - Android Studio [Hindi] #13",
+        "duration": "11:14",
+        "description": "Enjoy How to Run your App on Real Android Device (ADB) - Android Studio [Hindi] #13!"
+    },
+    {
+        "id": 14,
+        "youtube_id": "2lMEC9aO308",
+        "title": "What is XML | Android UI Design Introduction | Android Front End [Hindi] #14",
+        "duration": "14:39",
+        "description": "Enjoy What is XML | Android UI Design Introduction | Android Front End [Hindi] #14!"
+    },
+    {
+        "id": 15,
+        "youtube_id": "Hl5MwiTF_yQ",
+        "title": "How to Design in Android App (Layouts) writing code in XML - Hindi #15",
+        "duration": "1:04:41",
+        "description": "Enjoy How to Design in Android App (Layouts) writing code in XML - Hindi #15!"
+    },
+    {
+        "id": 16,
+        "youtube_id": "PzRtAhF_94w",
+        "title": "How to Design Android App (Views) writing code in XML | Button | TextView & UI Designing #16",
+        "duration": "36:57",
+        "description": "Enjoy How to Design Android App (Views) writing code in XML | Button | TextView &amp; UI Designing #16!"
+    },
+    {
+        "id": 17,
+        "youtube_id": "W_PLYfCdZgA",
+        "title": "How to Design in Android Apps using Drag and Drop | Mobile App without Coding  #17",
+        "duration": "34:47",
+        "description": "Enjoy How to Design in Android Apps using Drag and Drop | Mobile App without Coding  #17!"
+    },
+    {
+        "id": 18,
+        "youtube_id": "ada99UCvELI",
+        "title": "Android Architecture Full Information - [Hindi] - WsCube Tech#18",
+        "duration": "13:20",
+        "description": "Enjoy Android Architecture Full Information - [Hindi] - WsCube Tech#18!"
+    },
+    {
+        "id": 19,
+        "youtube_id": "4dPHr-2jy1g",
+        "title": "Android Components: Activity, Service & Content Provider [Hindi] #19",
+        "duration": "10:36",
+        "description": "Enjoy Android Components: Activity, Service &amp; Content Provider [Hindi] #19!"
+    },
+    {
+        "id": 20,
+        "youtube_id": "mGNW3qkWOMw",
+        "title": "How to Create Animations in Android Studio - Hindi | Android Studio #20",
+        "duration": "49:03",
+        "description": "Enjoy How to Create Animations in Android Studio - Hindi | Android Studio #20!"
+    },
+    {
+        "id": 21,
+        "youtube_id": "dKtfKgx8qaU",
+        "title": "How to create LOTTIE Animation with third party library inclusion [Hindi] #21",
+        "duration": "21:39",
+        "description": "Enjoy How to create LOTTIE Animation with third party library inclusion [Hindi] #21!"
+    },
+    {
+        "id": 22,
+        "youtube_id": "5ZMNnrMFPJk",
+        "title": "Listview, Spinner & Auto Complete Text View in Android Studio [Hindi]",
+        "duration": "37:52",
+        "description": "Enjoy Listview, Spinner &amp; Auto Complete Text View in Android Studio [Hindi]!"
+    },
+    {
+        "id": 23,
+        "youtube_id": "j0HZoRA3V90",
+        "title": "How to Create your own Style & Theme in Android App [Hindi]",
+        "duration": "15:07",
+        "description": "Enjoy How to Create your own Style &amp; Theme in Android App [Hindi]!"
+    },
+    {
+        "id": 24,
+        "youtube_id": "HADyEFViNxg",
+        "title": "Card View UI Design Android Studio - Material Design | Android Tutorial App UI",
+        "duration": "17:16",
+        "description": "Enjoy Card View UI Design Android Studio - Material Design | Android Tutorial App UI!"
+    },
+    {
+        "id": 25,
+        "youtube_id": "O_qLVOs3nzI",
+        "title": "Android Recycler View Complete Video 1 Hour | Android Tutorial in Hindi",
+        "duration": "1:03:18",
+        "description": "Enjoy Android Recycler View Complete Video 1 Hour | Android Tutorial in Hindi!"
+    },
+    {
+        "id": 26,
+        "youtube_id": "AUow1zsO6mg",
+        "title": "How to Add, Delete, and Update Items in Android RecyclerView | Android Studio Tutorial #26",
+        "duration": "36:22",
+        "description": "Enjoy How to Add, Delete, and Update Items in Android RecyclerView | Android Studio Tutorial #26!"
+    },
+    {
+        "id": 27,
+        "youtube_id": "zNn-TtRnc4k",
+        "title": "Create & Apply Animation | Recycler View Item Animation in Hindi - Android Tutorial #27",
+        "duration": "15:43",
+        "description": "Enjoy Create &amp; Apply Animation | Recycler View Item Animation in Hindi - Android Tutorial #27!"
+    },
+    {
+        "id": 28,
+        "youtube_id": "RYkKfeD9U3k",
+        "title": "How to Create Your Own Toolbar in Android Studio - Steps by Steps",
+        "duration": "48:52",
+        "description": "Enjoy How to Create Your Own Toolbar in Android Studio - Steps by Steps!"
+    },
+    {
+        "id": 29,
+        "youtube_id": "EPF-47mCMcg",
+        "title": "How to Create Your Own Drawable in Android Studio - Step by Step",
+        "duration": "51:29",
+        "description": "Enjoy How to Create Your Own Drawable in Android Studio - Step by Step!"
+    },
+    {
+        "id": 30,
+        "youtube_id": "cR_i1wG-WHg",
+        "title": "Custom Toast Notification/Message in Android Studio - in Hindi",
+        "duration": "31:07",
+        "description": "Enjoy Custom Toast Notification/Message in Android Studio - in Hindi!"
+    },
+    {
+        "id": 31,
+        "youtube_id": "Jg-Wjx_Jkyk",
+        "title": "How to Customize Dialog in Android Studio | Android Studio Tutorial",
+        "duration": "19:29",
+        "description": "Enjoy How to Customize Dialog in Android Studio | Android Studio Tutorial!"
+    },
+    {
+        "id": 32,
+        "youtube_id": "4-IG6XYJnB8",
+        "title": "What are Implicit Calls in Android Studio? How it's Work - Complete Concept",
+        "duration": "38:10",
+        "description": "Enjoy What are Implicit Calls in Android Studio? How it&#39;s Work - Complete Concept!"
+    },
+    {
+        "id": 33,
+        "youtube_id": "4TAiklw4fxM",
+        "title": "How to use Shared Preferences in Android Studio? Saving Data to Android Device",
+        "duration": "33:57",
+        "description": "Enjoy How to use Shared Preferences in Android Studio? Saving Data to Android Device!"
+    },
+    {
+        "id": 34,
+        "youtube_id": "XJ_vHKBiqak",
+        "title": "How to Use a Camera App to Capture and Show Images | Pick Image in Android",
+        "duration": "19:21",
+        "description": "Enjoy How to Use a Camera App to Capture and Show Images | Pick Image in Android!"
+    },
+    {
+        "id": 35,
+        "youtube_id": "BVkfpygp0DM",
+        "title": "Accelerometer Sensor and its Applications in Android Studio | Android Studio Tutorial",
+        "duration": "13:20",
+        "description": "Enjoy Accelerometer Sensor and its Applications in Android Studio | Android Studio Tutorial!"
+    },
+    {
+        "id": 36,
+        "youtube_id": "_wa0Dar4O-k",
+        "title": "How Can You Capture the Value of Light Sensor in an Android App?",
+        "duration": "16:23",
+        "description": "Enjoy How Can You Capture the Value of Light Sensor in an Android App?!"
+    },
+    {
+        "id": 37,
+        "youtube_id": "Obe2eJYZnKk",
+        "title": "How to make a First Android App (BMI) in Android Studio | Make App in 50 Minutes",
+        "duration": "45:54",
+        "description": "Enjoy How to make a First Android App (BMI) in Android Studio | Make App in 50 Minutes!"
+    }
+]
