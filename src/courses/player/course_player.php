@@ -37,11 +37,6 @@ get_header();
                                 <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: #000; color: #fff;">No videos available</div>
                             <?php endif; ?>
                         </div>
-                        <div class="mt-3 text-center">
-                            <a id="fallback-youtube-link" href="https://www.youtube.com/watch?v=<?php echo esc_attr($videos[0]['youtube_id']); ?>" target="_blank" class="btn btn-outline-danger btn-sm" style="font-size: 0.8rem;">
-                                <i class="fa-brands fa-youtube" style="margin-right: 3px;"></i> Play on YT
-                            </a>
-                        </div>
                     </div>
                     
                     <div class="video-details glass-card mt-4" style="padding: 25px; border: 1px solid rgba(128,128,128,0.2); box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
