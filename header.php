@@ -40,7 +40,7 @@
                             </button>
                         </li>
                         <li>
-                            <a href="<?php echo esc_url( get_template_directory_uri() . '/src/courses/course_roadmap.php' ); ?>" aria-label="Course Roadmap" style="font-size: 1.2rem; cursor: pointer; transition: color 0.3s; padding: 0;">
+                            <a href="<?php echo esc_url( wp_make_link_relative( get_template_directory_uri() . '/src/courses/course_roadmap.php' ) ); ?>" aria-label="Course Roadmap" style="font-size: 1.2rem; cursor: pointer; transition: color 0.3s; padding: 0;">
                                 <i class="fa-solid fa-graduation-cap"></i>
                             </a>
                         </li>

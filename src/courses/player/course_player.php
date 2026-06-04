@@ -1,11 +1,13 @@
 <?php
 require_once dirname(__FILE__, 7) . '/wp-load.php';
 
-$json_path = get_template_directory() . '/src/courses/data/videos.json';
+$json_path = dirname(__DIR__) . '/data/videos.json';
 $videos = [];
 if (file_exists($json_path)) {
     $json_data = file_get_contents($json_path);
+    $json_data = preg_replace('/^[\xef\xbb\xbf]+/', '', $json_data);
     $videos = json_decode($json_data, true);
+    if (!is_array($videos)) $videos = [];
 }
 
 $course_title = isset($_GET['course']) ? ucwords(str_replace('-', ' ', $_GET['course'])) : 'Course';
@@ -18,7 +20,7 @@ get_header();
         <div class="container-fluid" style="width: 100%; max-width: 100%; padding: 0 20px;">
             
             <div class="player-header mb-4">
-                <a href="<?php echo esc_url( get_template_directory_uri() . '/src/courses/course_roadmap.php' ); ?>" class="btn-cert-small" style="display: inline-block; margin-bottom: 20px;"><i class="fa-solid fa-arrow-left"></i> Back to Roadmap</a>
+                <a href="<?php echo esc_url( wp_make_link_relative( get_template_directory_uri() . '/src/courses/course_roadmap.php' ) ); ?>" class="btn-cert-small" style="display: inline-block; margin-bottom: 20px;"><i class="fa-solid fa-arrow-left"></i> Back to Roadmap</a>
                 <h2 class="section-title" id="course-title"><?php echo esc_html($course_phase); ?></h2>
             </div>
 
@@ -31,7 +33,7 @@ get_header();
                             <!-- The iframe src will be set by JS. Initially load the first video if available -->
                             <?php if (!empty($videos)): ?>
                                 <iframe id="youtube-player" src="https://www.youtube.com/embed/<?php echo esc_attr($videos[0]['youtube_id']); ?>?rel=0&modestbranding=1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                            {% else %}
+                            <?php else: ?>
                                 <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: #000; color: #fff;">No videos available</div>
                             <?php endif; ?>
                         </div>
