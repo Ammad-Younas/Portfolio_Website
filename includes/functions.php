@@ -1,7 +1,11 @@
 <?php
 // Custom PHP Website Functions (Polyfilling WP functions used in this template)
 
-define('BASE_URL', '/portfolio_website');
+$doc_root = rtrim(str_replace('\\', '/', $_SERVER['DOCUMENT_ROOT']), '/');
+$theme_dir = str_replace('\\', '/', dirname(__DIR__));
+$base_url = str_replace($doc_root, '', $theme_dir);
+
+define('BASE_URL', $base_url);
 define('THEME_DIR', __DIR__ . '/..');
 
 function get_header() {
