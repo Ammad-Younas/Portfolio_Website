@@ -46,7 +46,7 @@ get_header();
                                 <i class="fa-regular fa-clock"></i> <span id="current-video-duration"><?php echo esc_html($videos[0]['duration']); ?></span>
                             </div>
                             <div class="section-line" style="margin-left: 0; margin-bottom: 20px;"></div>
-                            <p id="current-video-desc" class="text-muted">
+                            <p id="current-video-desc" class="text-muted" style="white-space: pre-wrap;">
                                 <?php echo esc_html($videos[0]['description']); ?>
                             </p>
                         <?php endif; ?>
@@ -62,9 +62,9 @@ get_header();
                         </div>
                         
                         <div class="playlist-items" style="overflow-y: auto; padding: 10px; flex-grow: 1;">
-                            <?php $forloop_first = true; foreach ($videos as $video): ?>
-                            <div class="playlist-item <?php echo $forloop_first ? 'active' : ''; ?>" 
-                                 onclick="playVideo('<?php echo esc_attr($video['youtube_id']); ?>', '<?php echo esc_js($video['title']); ?>', '<?php echo esc_html($video['duration']); ?>', '<?php echo esc_js($video['description']); ?>', this)">
+                            <?php $index = 0; foreach ($videos as $video): ?>
+                            <div class="playlist-item <?php echo $index === 0 ? 'active' : ''; ?>" 
+                                 onclick="playVideo(<?php echo $index; ?>, this)">
                                 <div class="item-number"><?php echo esc_html($video['id']); ?></div>
                                 <div class="item-details">
                                     <h4 class="item-title"><?php echo esc_html($video['title']); ?></h4>
@@ -74,7 +74,7 @@ get_header();
                                     <i class="fa-solid fa-play"></i>
                                 </div>
                             </div>
-                            <?php $forloop_first = false; endforeach; ?>
+                            <?php $index++; endforeach; ?>
                         </div>
                     </div>
                 </div>
@@ -180,20 +180,25 @@ get_header();
 </style>
 
 <script>
-    function playVideo(youtubeId, title, duration, description, element) {
+    const courseVideos = <?php echo json_encode($videos, JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_HEX_AMP); ?>;
+    
+    function playVideo(index, element) {
+        const video = courseVideos[index];
+        if (!video) return;
+
         const player = document.getElementById('youtube-player');
         if (player) {
-            player.src = "https://www.youtube.com/embed/" + youtubeId + "?rel=0&modestbranding=1";
+            player.src = "https://www.youtube.com/embed/" + video.youtube_id + "?rel=0&modestbranding=1";
         }
         
         const fallback = document.getElementById('fallback-youtube-link');
         if (fallback) {
-            fallback.href = "https://www.youtube.com/watch?v=" + youtubeId;
+            fallback.href = "https://www.youtube.com/watch?v=" + video.youtube_id;
         }
         
-        document.getElementById('current-video-title').textContent = title;
-        document.getElementById('current-video-duration').textContent = duration;
-        document.getElementById('current-video-desc').textContent = description;
+        document.getElementById('current-video-title').textContent = video.title;
+        document.getElementById('current-video-duration').textContent = video.duration;
+        document.getElementById('current-video-desc').innerText = video.description;
         
         const items = document.querySelectorAll('.playlist-item');
         items.forEach(item => item.classList.remove('active'));
