@@ -181,24 +181,20 @@ get_header();
 
 <script>
     function playVideo(youtubeId, title, duration, description, element) {
-        // Update iframe
         const player = document.getElementById('youtube-player');
         if (player) {
             player.src = "https://www.youtube.com/embed/" + youtubeId + "?rel=0&modestbranding=1";
         }
         
-        // Update fallback link
         const fallback = document.getElementById('fallback-youtube-link');
         if (fallback) {
             fallback.href = "https://www.youtube.com/watch?v=" + youtubeId;
         }
         
-        // Update details
         document.getElementById('current-video-title').textContent = title;
         document.getElementById('current-video-duration').textContent = duration;
         document.getElementById('current-video-desc').textContent = description;
         
-        // Update active class
         const items = document.querySelectorAll('.playlist-item');
         items.forEach(item => item.classList.remove('active'));
         element.classList.add('active');

@@ -32,7 +32,7 @@ get_header();
                 <!-- Roadmap Card 1 -->
                 <div class="project-card glass-card animate-fade-up" style="display: flex; flex-direction: column;">
                     <div class="project-content" style="padding: 30px;">
-                        <h3 class="project-title" style="font-size: 2rem;"><i class="fa-solid fa-graduation-cap highlight-red" style="margin-right: 12px;"></i> Chapter 1: &nbsp; Android Basics</h3>
+                        <h3 class="project-title" style="font-size: 2rem;"><i class="fa-solid fa-graduation-cap highlight-orange" style="margin-right: 12px;"></i> Chapter 1: &nbsp; Android Basics</h3>
                         <p class="project-desc mt-3">
                             This module covers the core concepts and fundamental topics needed to build a strong base in development. Contains 37 video lessons ranging from beginner to intermediate.
                         </p>
@@ -68,3 +68,4 @@ get_header();
 
 
 <?php get_footer(); ?>
+
