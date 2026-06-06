@@ -16,19 +16,24 @@ $course_phase = isset($_GET['phase']) ? ucwords(str_replace('-', ' ', $_GET['pha
 get_header();
 ?>
 <main id="primary" class="site-main">
-    <section class="section-padding dark-bg" style="padding-top: 120px;">
+    <section class="section-padding dark-bg" style="padding-top: 120px; position: relative;">
+        
+        <!-- Far left positioned back button -->
+        <div style="position: absolute; top: 120px; left: 40px; z-index: 10;">
+            <a href="<?php echo esc_url( home_url( '/src/courses/course_roadmap.php' ) ); ?>" class="btn-cert-small player-back-btn" style="display: inline-block;"><i class="fa-solid fa-arrow-left"></i> Back to Roadmap</a>
+        </div>
+
         <div class="container-fluid" style="width: 100%; max-width: 100%; padding: 0 20px;">
             
-            <div class="player-header mb-4">
-                <a href="<?php echo esc_url( home_url( '/src/courses/course_roadmap.php' ) ); ?>" class="btn-cert-small player-back-btn" style="display: inline-block; margin-bottom: 20px;"><i class="fa-solid fa-arrow-left"></i> Back to Roadmap</a>
+            <div class="player-header mb-4 text-left" style="margin-top: 50px; padding-left: 20px;">
                 <h2 class="section-title" id="course-title"><?php echo esc_html($course_phase); ?></h2>
             </div>
 
             <div class="course-player-grid">
                 
                 <!-- Left Side: Video Player & Description -->
-                <div class="player-main-col">
-                    <div class="video-container glass-card" style="padding: 10px; border: 1px solid rgba(128,128,128,0.2); box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+                <div class="player-main-col" style="display: flex; gap: 30px; align-items: stretch;">
+                    <div class="video-container glass-card" style="width: 100%; max-width: 60vw; flex: 2; padding: 10px; border: 1px solid rgba(128,128,128,0.2); box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
                         <div class="responsive-iframe" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px;">
                             <!-- The iframe src will be set by JS. Initially load the first video if available -->
                             <?php if (!empty($videos)): ?>
@@ -39,17 +44,19 @@ get_header();
                         </div>
                     </div>
                     
-                    <div class="video-details glass-card mt-4" style="padding: 25px; border: 1px solid rgba(128,128,128,0.2); box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
-                        <?php if (!empty($videos)): ?>
-                            <h3 id="current-video-title" class="mb-3"><?php echo esc_html($videos[0]['title']); ?></h3>
-                            <div class="video-meta mb-3" style="color: var(--highlight-orange); font-size: 0.9rem;">
-                                <i class="fa-regular fa-clock"></i> <span id="current-video-duration"><?php echo esc_html($videos[0]['duration']); ?></span>
-                            </div>
-                            <div class="section-line" style="margin-left: 0; margin-bottom: 20px;"></div>
-                            <p id="current-video-desc" class="text-muted" style="white-space: pre-wrap;">
-                                <?php echo esc_html($videos[0]['description']); ?>
-                            </p>
-                        <?php endif; ?>
+                    <div class="video-details-wrapper" style="flex: 1; position: relative;">
+                        <div class="video-details glass-card" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow-y: auto; padding: 25px; border: 1px solid rgba(128,128,128,0.2); box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+                            <?php if (!empty($videos)): ?>
+                                <h3 id="current-video-title" class="mb-3"><?php echo esc_html($videos[0]['title']); ?></h3>
+                                <div class="video-meta mb-3" style="color: var(--highlight-orange); font-size: 0.9rem;">
+                                    <i class="fa-regular fa-clock"></i> <span id="current-video-duration"><?php echo esc_html($videos[0]['duration']); ?></span>
+                                </div>
+                                <div class="section-line" style="margin-left: 0; margin-bottom: 20px;"></div>
+                                <p id="current-video-desc" class="text-muted" style="white-space: pre-wrap; margin-bottom: 0;">
+                                    <?php echo esc_html($videos[0]['description']); ?>
+                                </p>
+                            <?php endif; ?>
+                        </div>
                     </div>
                 </div>
 
@@ -87,14 +94,39 @@ get_header();
 <style>
     .course-player-grid {
         display: grid;
-        grid-template-columns: 2.5fr 1fr;
+        grid-template-columns: 1fr;
         gap: 30px;
         align-items: start;
     }
     
-    @media (max-width: 991px) {
-        .course-player-grid {
-            grid-template-columns: 1fr;
+    .video-details::-webkit-scrollbar {
+        width: 6px;
+    }
+    .video-details::-webkit-scrollbar-track {
+        background: rgba(255, 255, 255, 0.05); 
+        border-radius: 10px;
+    }
+    .video-details::-webkit-scrollbar-thumb {
+        background: var(--color-red); 
+        border-radius: 10px;
+    }
+
+    @media (max-width: 1199px) {
+        .player-main-col {
+            flex-direction: column;
+        }
+        .video-container {
+            max-width: 100% !important;
+        }
+        .video-details-wrapper {
+            position: static !important;
+            width: 100%;
+        }
+        .video-details {
+            position: relative !important;
+            height: auto !important;
+            margin-top: 20px;
+            max-height: 300px;
         }
         .playlist-container {
             max-height: 500px !important;
@@ -115,7 +147,7 @@ get_header();
         border-radius: 10px;
     }
     .playlist-items::-webkit-scrollbar-thumb {
-        background: var(--color-orange); 
+        background: var(--color-red); 
         border-radius: 10px;
     }
 
