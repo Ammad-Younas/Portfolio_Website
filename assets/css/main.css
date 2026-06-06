@@ -1563,3 +1563,10 @@ body.light-mode .preview-modal-close:hover {
     color: #fff;
 }
 
+
+
+/* Project Details Page See Live Demo button hover */
+.project-detail-section .btn-secondary:hover {
+    border-color: var(--color-orange);
+}
+
