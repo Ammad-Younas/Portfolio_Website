@@ -14,7 +14,7 @@ get_header();
             <div class="container hero-content grid-2-col" style="align-items: center;">
                 <div class="hero-text animate-fade-up">
                     <p class="hero-greeting">Hi, I'm</p>
-                    <h1 class="hero-title">Muhammad <span class="highlight-red">Ammad</span> Younas</h1>
+                    <h1 class="hero-title" style="user-select: none;">Muhammad <span class="highlight-red" id="roadmap-trigger">Ammad</span> Younas</h1>
                     <h2 class="hero-subtitle type-effect">Android Developer & Python Enthusiast</h2>
                     <p class="hero-description">
                         I specialize in building native Android applications and automating workflows with Python. Turning ideas into functional, clean and user-friendly digital experiences.

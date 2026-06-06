@@ -193,20 +193,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     // 7-Click Easter Egg for Course Roadmap
-    let clickCount = 0;
-    let clickTimer = null;
-    document.body.addEventListener('click', () => {
-        clickCount++;
-        clearTimeout(clickTimer);
-        if (clickCount >= 7) {
-            clickCount = 0;
-            const baseUrl = portfolio_ajax.ajax_url.replace('/includes/core/ajax.php', '');
-            window.location.href = baseUrl + '/src/courses/course_roadmap.php';
-        }
-        clickTimer = setTimeout(() => {
-            clickCount = 0;
-        }, 2000);
-    });
+    const roadmapTrigger = document.getElementById('roadmap-trigger');
+    if (roadmapTrigger) {
+        let clickCount = 0;
+        let clickTimer = null;
+        roadmapTrigger.addEventListener('click', () => {
+            clickCount++;
+            clearTimeout(clickTimer);
+            if (clickCount >= 7) {
+                clickCount = 0;
+                const baseUrl = portfolio_ajax.ajax_url.replace('/includes/core/ajax.php', '');
+                window.location.href = baseUrl + '/src/courses/course_roadmap.php';
+            }
+            clickTimer = setTimeout(() => {
+                clickCount = 0;
+            }, 2000);
+        });
+    }
 
 
     // GitHub README Rendering
