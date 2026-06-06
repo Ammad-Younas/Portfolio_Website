@@ -29,7 +29,7 @@ get_header();
                     <div class="hero-image-wrapper glass-card" style="display: inline-block; padding: 20px; border-radius: 50%; width: 100%; max-width: 350px; aspect-ratio: 1/1; position: relative;">
                         <!-- Profile Pic -->
                         <div class="image-placeholder" style="width: 100%; height: 100%; border-radius: 50%; display: flex; align-items: center; justify-content: center; overflow: hidden; border: 2px solid var(--color-red); background-color: #EFD6AE;">
-                            <img src="<?php echo esc_url( home_url( '/assets/' ) ); ?>avatar/Ammad.png" alt="Ammad Younas" style="width: 100%; height: 100%; object-fit: contain; margin-top: 40px;">
+                            <img src="<?php echo esc_url( home_url( '/assets/' ) ); ?>avatar/ammad.png" alt="Ammad Younas" style="width: 100%; height: 100%; object-fit: contain; margin-top: 40px;">
                         </div>
                     </div>
                 </div>
