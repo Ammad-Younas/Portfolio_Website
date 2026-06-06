@@ -1262,7 +1262,7 @@ body.light-mode .preview-modal-close:hover {
 }
 
 .footer-contact i {
-    color: var(--color-red);
+    color: var(--color-orange);
     width: 15px;
     text-align: center;
     flex-shrink: 0;
