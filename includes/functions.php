@@ -82,6 +82,7 @@ function wp_footer() {
     $main_js_time = file_exists(THEME_DIR . '/assets/js/main.js') ? filemtime(THEME_DIR . '/assets/js/main.js') : time();
     echo <<<HTML
     <script src="{$base_url}/assets/js/main.js?v={$main_js_time}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 HTML;
 }
 

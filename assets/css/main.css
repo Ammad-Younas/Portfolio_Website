@@ -81,7 +81,7 @@ body.light-mode .project-link {
 }
 
 body.light-mode .project-link:hover {
-    color: var(--color-red);
+    color: var(--color-orange);
 }
 
 body.light-mode .education-box,
@@ -467,6 +467,10 @@ ul {
     border-color: rgba(255, 51, 51, 0.3);
 }
 
+.project-card.glass-card:hover, .about-text.glass-card:hover {
+    border-color: rgba(255, 123, 0, 0.3);
+}
+
 /* About Section */
 .grid-2-col {
     display: grid;
@@ -604,7 +608,7 @@ ul {
 }
 
 .image-placeholder:hover {
-    border-color: rgba(255, 51, 51, 0.3);
+    border-color: rgba(255, 123, 0, 0.3);
 }
 
 .image-accent-border {
@@ -669,14 +673,14 @@ body.light-mode .profile-social-item {
 
 body.light-mode .profile-social-item:hover {
     background: rgba(0, 0, 0, 0.08);
-    border-color: rgba(255, 51, 51, 0.3);
+    border-color: rgba(255, 123, 0, 0.3);
 }
 
 .social-icon-box {
     width: 45px;
     height: 45px;
     background: rgba(255, 51, 51, 0.1);
-    color: var(--color-red);
+    color: var(--color-orange);
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -813,8 +817,8 @@ body.light-mode .profile-social-item:hover {
 
 .tech-card:hover {
     transform: translateY(-5px);
-    border-color: var(--color-orange);
-    box-shadow: 0 10px 20px rgba(255, 123, 0, 0.1);
+    border-color: var(--color-red);
+    box-shadow: 0 10px 20px rgba(255, 51, 51, 0.1);
 }
 
 .tech-icon {
@@ -925,7 +929,7 @@ body.light-mode .profile-social-item:hover {
 }
 
 .project-link:hover {
-    color: var(--color-red);
+    color: var(--color-orange);
 }
 
 /* Individual Project Page */
@@ -1161,8 +1165,8 @@ body.light-mode .preview-modal-close:hover {
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: var(--color-orange);
-    box-shadow: 0 0 0 2px rgba(255, 123, 0, 0.2);
+    border-color: transparent;
+    box-shadow: 0 0 10px rgba(255, 51, 51, 0.4);
 }
 
 .form-message {
@@ -1231,7 +1235,7 @@ body.light-mode .preview-modal-close:hover {
 }
 
 .social-links a:hover {
-    background: var(--color-red);
+    background: var(--color-orange);
     color: #fff;
 }
 
@@ -1467,3 +1471,73 @@ body.light-mode .preview-modal-close:hover {
         justify-content: center;
     }
 }
+/* GitHub README Styles */
+#github-readme-content h1, 
+#github-readme-content h2, 
+#github-readme-content h3, 
+#github-readme-content h4, 
+#github-readme-content h5, 
+#github-readme-content h6 {
+    color: var(--text-main) !important;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#github-readme-content p, 
+#github-readme-content li, 
+#github-readme-content span, 
+#github-readme-content a {
+    color: var(--text-muted) !important;
+}
+
+#github-readme-content a {
+    text-decoration: underline;
+}
+
+#github-readme-content pre {
+    background-color: var(--glass-bg) !important;
+    border: 1px solid var(--glass-border);
+    padding: 15px;
+    padding-right: 80px;
+    border-radius: 8px;
+    overflow-x: auto;
+    white-space: pre;
+}
+
+#github-readme-content code {
+    background: var(--glass-bg);
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: var(--color-orange);
+    font-weight: 600;
+}
+
+#github-readme-content pre code {
+    background: transparent;
+    padding: 0;
+    color: var(--color-orange);
+}
+
+.copy-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    color: var(--text-main);
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: all var(--transition-fast);
+}
+
+.copy-btn:hover {
+    background: var(--color-orange);
+    border-color: var(--color-orange);
+    color: #fff;
+}
+
+
+
+

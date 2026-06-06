@@ -8,16 +8,14 @@ get_header();
     <section class="project-detail-section section-padding">
         <div class="container">
             <div class="project-detail-header text-center animate-fade-up">
-                <h1 class="section-title">Under <span class="highlight-red">Byte</span></h1>
+                <h1 class="section-title">Under <span class="highlight-orange">Byte</span></h1>
                 <div class="section-line mx-auto"></div>
             </div>
 
             <div class="project-detail-content glass-card mt-4 animate-fade-up" style="animation-delay: 0.1s;">
-                <img src="<?php echo esc_url( home_url( '/assets/' ) ); ?>images/projects_header_images/under_byte.jpg" alt="Under Byte" style="width: 100%; height: 400px; object-fit: cover; border-radius: 10px; margin-bottom: 30px;">
+                <img src="<?php echo esc_url( home_url( '/assets/' ) ); ?>images/projects_header_images/under_byte.jpg" alt="Under Byte" style="width: 100%; object-fit: contain; max-height: 400px; height: auto; background-color: rgba(128,128,128,0.05); border-radius: 10px; margin-bottom: 30px;">
                 
-                <h3>About This Project</h3>
-                <p>Structured as a comprehensive Final Year Project, Under Byte is a native Android chat application built to showcase modern mobile development practices. Developed entirely in Kotlin, the application features a robust messaging system where users can seamlessly create or join dedicated chat rooms. It demonstrates strong architectural implementation through rich media support, allowing users to share files, preview media, and record or play audio directly within the interface. To ensure performance, the app utilizes a local Room database for media caching and data persistence, paired with Retrofit for efficient backend API communication. A unique technical highlight of the application is its custom steganography integration, providing specialized tools to embed and process hidden data within media files.</p>
-                
+                <div id="github-readme-content" class="mt-5 mb-5" style="text-align: left; border-top: 1px solid rgba(128,128,128,0.2); border-bottom: 1px solid rgba(128,128,128,0.2); padding: 30px 0;"></div>
                 <h3 class="mt-4">Tech Stack</h3>
                 <div class="project-tags">
                     <span>Android Development</span>
@@ -27,7 +25,7 @@ get_header();
                 </div>
 
                 <div class="project-actions mt-4">
-                    <a href="https://github.com/Ammad-Younas/Under-Byte" target="_blank" class="btn btn-primary"><i class="fa-brands fa-github"></i> View Repository</a>
+                    <a href="https://github.com/Ammad-Younas/Under-Byte" id="github-repo-link"  target="_blank" class="btn btn-primary"><i class="fa-brands fa-github"></i> View Repository</a>
                     <a href="https://play.google.com/store/apps/details?id=com.madirwx.underbyte" target="_blank" class="btn btn-secondary"><i class="fa-solid fa-arrow-up-right-from-square"></i> See Live Demo</a>
                 </div>
             </div>
@@ -41,4 +39,6 @@ get_header();
 
 <?php
 get_footer();
+
+
 
