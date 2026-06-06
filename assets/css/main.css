@@ -218,7 +218,7 @@ ul {
 
 .btn-secondary:hover {
     background: var(--glass-bg);
-    border-color: var(--color-orange);
+    border-color: var(--color-red);
     color: #fff;
 }
 
@@ -1540,9 +1540,6 @@ body.light-mode .preview-modal-close:hover {
 
 
 
-
-
-
 /* Specific color overrides for Project Details Page */
 .project-detail-section .btn-cert {
     color: var(--color-orange);
@@ -1551,6 +1548,18 @@ body.light-mode .preview-modal-close:hover {
 }
 .project-detail-section .btn-cert:hover {
     background: var(--color-orange);
+    color: #fff;
+}
+
+
+
+/* Course Player Specifics */
+.player-back-btn {
+    color: var(--color-red);
+    background: rgba(255, 51, 51, 0.1);
+}
+.player-back-btn:hover {
+    background: var(--color-red);
     color: #fff;
 }
 
