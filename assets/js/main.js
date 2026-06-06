@@ -273,7 +273,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     });
                 })
                 .catch(error => {
-                    readmeContainer.innerHTML = '<p class="text-muted">Could not load README automatically from GitHub. Click the repository link above to view it.</p>';
+                    readmeContainer.innerHTML = '<p class="text-muted">Could not load README automatically from GitHub. Click the repository link below to view it.</p>';
                 });
         }
     }

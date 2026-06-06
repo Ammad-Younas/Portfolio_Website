@@ -218,7 +218,7 @@ ul {
 
 .btn-secondary:hover {
     background: var(--glass-bg);
-    border-color: var(--color-red);
+    border-color: var(--color-orange);
     color: #fff;
 }
 
@@ -467,7 +467,7 @@ ul {
     border-color: rgba(255, 51, 51, 0.3);
 }
 
-.project-card.glass-card:hover, .about-text.glass-card:hover {
+.project-card.glass-card:hover, .about-text.glass-card:hover, .project-detail-content.glass-card:hover {
     border-color: rgba(255, 123, 0, 0.3);
 }
 
@@ -1540,4 +1540,17 @@ body.light-mode .preview-modal-close:hover {
 
 
 
+
+
+
+/* Specific color overrides for Project Details Page */
+.project-detail-section .btn-cert {
+    color: var(--color-orange);
+    border-color: var(--color-orange);
+    background: rgba(255, 123, 0, 0.1);
+}
+.project-detail-section .btn-cert:hover {
+    background: var(--color-orange);
+    color: #fff;
+}
 
