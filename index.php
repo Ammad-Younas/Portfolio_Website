@@ -256,7 +256,7 @@ get_header();
                             </div>
                             <div class="project-links" style="display: flex; gap: 15px; flex-wrap: wrap;">
                                 <a href="https://github.com/Ammad-Younas/Appointment_Booking_App" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> View Repository</a>
-                                <a href="<?php echo esc_url( home_url( '/src/projects/appointment_booking_app.php' )  ); ?>" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</a>
+                                <a href="<?php echo esc_url( home_url( '/src/projects/appointment_booking_app' )  ); ?>" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</a>
                             </div>
                         </div>
                     </div>
@@ -275,7 +275,7 @@ get_header();
                             </div>
                             <div class="project-links" style="display: flex; gap: 15px; flex-wrap: wrap;">
                                 <a href="https://github.com/Ammad-Younas/Under-Byte" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> View Repository</a>
-                                <a href="<?php echo esc_url( home_url( '/src/projects/under_byte.php' )  ); ?>" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</a>
+                                <a href="<?php echo esc_url( home_url( '/src/projects/under_byte' )  ); ?>" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</a>
                             </div>
                         </div>
                     </div>
@@ -294,7 +294,7 @@ get_header();
                             </div>
                             <div class="project-links" style="display: flex; gap: 15px; flex-wrap: wrap;">
                                 <a href="https://github.com/Ammad-Younas/Android_Development_Journey/tree/main/RecipeApp" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> View Repository</a>
-                                <a href="<?php echo esc_url( home_url( '/src/projects/recipe_app.php' )  ); ?>" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</a>
+                                <a href="<?php echo esc_url( home_url( '/src/projects/recipe_app' )  ); ?>" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</a>
                             </div>
                         </div>
                     </div>
@@ -313,7 +313,7 @@ get_header();
                             </div>
                             <div class="project-links" style="display: flex; gap: 15px; flex-wrap: wrap;">
                                 <a href="https://github.com/Ammad-Younas/Odoo_Scraper" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> View Repository</a>
-                                <a href="<?php echo esc_url( home_url( '/src/projects/odoo_partner_scraper.php' )  ); ?>" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</a>
+                                <a href="<?php echo esc_url( home_url( '/src/projects/odoo_partner_scraper' )  ); ?>" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</a>
                             </div>
                         </div>
                     </div>
@@ -331,7 +331,7 @@ get_header();
                             </div>
                             <div class="project-links" style="display: flex; gap: 15px; flex-wrap: wrap;">
                                 <a href="https://github.com/Ammad-Younas/Youtube_As_Unlimited_Storage" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> View Repository</a>
-                                <a href="<?php echo esc_url( home_url( '/src/projects/youtube_as_unlimited_storage.php' )  ); ?>" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</a>
+                                <a href="<?php echo esc_url( home_url( '/src/projects/youtube_as_unlimited_storage' )  ); ?>" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</a>
                             </div>
                         </div>
                     </div>
@@ -350,7 +350,7 @@ get_header();
                             </div>
                             <div class="project-links" style="display: flex; gap: 15px; flex-wrap: wrap;">
                                 <a href="https://github.com/Ammad-Younas/Portable_EXE_Generator" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> View Repository</a>
-                                <a href="<?php echo esc_url( home_url( '/src/projects/portable_exe_gen.php' )  ); ?>" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</a>
+                                <a href="<?php echo esc_url( home_url( '/src/projects/portable_exe_gen' )  ); ?>" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</a>
                             </div>
                         </div>
                     </div>

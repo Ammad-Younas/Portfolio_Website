@@ -20,7 +20,7 @@ get_header();
         
         <!-- Far left positioned back button -->
         <div style="position: absolute; top: 120px; left: 40px; z-index: 10;">
-            <a href="<?php echo esc_url( home_url( '/src/courses/course_roadmap.php' ) ); ?>" class="btn-cert-small player-back-btn" style="display: inline-block;"><i class="fa-solid fa-arrow-left"></i> Back to Roadmap</a>
+            <a href="<?php echo esc_url( home_url( '/src/courses/course_roadmap' ) ); ?>" class="btn-cert-small player-back-btn" style="display: inline-block;"><i class="fa-solid fa-arrow-left"></i> Back to Roadmap</a>
         </div>
 
         <div class="container-fluid" style="width: 100%; max-width: 100%; padding: 0 20px;">

@@ -54,7 +54,7 @@ get_header();
                         </div>
                         
                         <div class="mt-auto">
-                            <a href="<?php echo esc_url(home_url('/src/blog/blogs/android-interview-questions-answers-real-scenario-based-with-in-depth-explanations.php')); ?>" class="btn-cert-small w-100 text-center" style="display: block;">Read More</a>
+                            <a href="<?php echo esc_url(home_url('/src/blogs/blog/android-interview-questions-answers-real-scenario-based-with-in-depth-explanations')); ?>" class="btn-cert-small w-100 text-center" style="display: block;">Read More</a>
                         </div>
                     </div>
                 </div>

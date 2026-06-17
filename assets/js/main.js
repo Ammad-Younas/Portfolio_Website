@@ -203,7 +203,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (clickCount >= 7) {
                 clickCount = 0;
                 const baseUrl = portfolio_ajax.ajax_url.replace('/includes/core/ajax.php', '');
-                window.location.href = baseUrl + '/src/courses/course_roadmap.php';
+                window.location.href = baseUrl + '/src/courses/course_roadmap';
             }
             clickTimer = setTimeout(() => {
                 clickCount = 0;
