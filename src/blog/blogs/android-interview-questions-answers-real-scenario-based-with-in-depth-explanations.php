@@ -706,14 +706,20 @@ body.light-mode .copy-code-btn:hover {
     background-color: var(--color-orange);
     color: #fff !important;
 }
+
+@media (max-width: 992px) {
+    .blog-main-section {
+        padding-top: 180px !important;
+    }
+}
 </style>
 
 <main id="primary" class="site-main">
-    <section class="section-padding dark-bg" style="padding-top: 150px; position: relative;">
+    <section class="section-padding dark-bg blog-main-section" style="padding-top: 150px; position: relative;">
         
         <!-- Back button -->
         <div style="position: absolute; top: 120px; left: 40px; z-index: 10;">
-            <a href="<?php echo esc_url(home_url('/src/blog/blog_list_page.php')); ?>" class="btn-cert-small blog-back-btn"><i class="fa-solid fa-arrow-left"></i> Back to Blogs</a>
+            <a href="<?php echo esc_url(home_url('/src/blog/blog_list_page.php')); ?>" class="btn-cert-small blog-back-btn" style="display: inline-block;"><i class="fa-solid fa-arrow-left"></i> Back to Blogs</a>
         </div>
 
         <div class="container" style="max-width: 900px;">
@@ -766,8 +772,7 @@ body.light-mode .copy-code-btn:hover {
                                 echo '<h2 class="qna-question" style="font-size: 1.6rem; color: var(--highlight-orange); margin-bottom: 20px; display: flex; align-items: flex-start; gap: 15px;">';
                                 echo '<span style="flex-grow: 1; padding-top: 4px;">' . esc_html($qa['question']) . '</span>';
                                 echo '</h2>';
-                                
-                                echo '<div class="qna-answer" style="padding-left: 15px; border-left: 2px solid rgba(128,128,128,0.2); margin-left: 20px;" data-md="' . base64_encode($qa['answer']) . '">';
+                                echo '<div class="qna-answer" data-md="' . base64_encode($qa['answer']) . '">';
                                 echo '</div>';
                                 
                                 echo '</div>';
