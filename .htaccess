@@ -1,5 +1,8 @@
 RewriteEngine On
 
+# Custom route for course player
+RewriteRule ^src/courses/course/([^/]+)/?$ src/courses/player/player.php?course=$1 [L,QSA]
+
 # Route extensionless requests to .php files if they exist
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.php -f

@@ -42,7 +42,7 @@ get_header();
                             <span>37 Lessons</span>
                         </div>
                         <div class="project-links mt-4">
-                            <a href="<?php echo esc_url( home_url( '/src/courses/player/course_player?course=android-development&chapter=chapter-1-android-basics' ) ); ?>" class="btn btn-primary" style="width: 100%; text-align: center;">
+                            <a href="<?php echo esc_url( home_url( '/src/courses/course/android-basics/' ) ); ?>" class="btn btn-primary" style="width: 100%; text-align: center;">
                                 <i class="fa-solid fa-play" style="margin-right: 12px;"></i> Start Learning
                             </a>
                         </div>
