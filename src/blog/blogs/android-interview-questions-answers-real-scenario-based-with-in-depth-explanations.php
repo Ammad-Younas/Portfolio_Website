@@ -794,41 +794,69 @@ body.light-mode .copy-code-btn:hover {
 <script>
 document.addEventListener("DOMContentLoaded", function() {
     
-    function processMarkdownBlocks(selector) {
-        document.querySelectorAll(selector).forEach(function(el) {
-            if(el.dataset.md) {
-                var rawMd = decodeURIComponent(escape(window.atob(el.dataset.md)));
-                el.innerHTML = marked.parse(rawMd);
-                el.classList.add('blog-content');
+    function processSingleBlock(el) {
+        if(el.dataset.md) {
+            var rawMd = decodeURIComponent(escape(window.atob(el.dataset.md)));
+            el.innerHTML = marked.parse(rawMd);
+            el.classList.add('blog-content');
+            
+            el.querySelectorAll('pre').forEach(function(preBlock) {
+                var wrapper = document.createElement('div');
+                wrapper.className = 'code-wrapper';
+                preBlock.parentNode.insertBefore(wrapper, preBlock);
+                wrapper.appendChild(preBlock);
                 
-                el.querySelectorAll('pre').forEach(function(preBlock) {
-                    var wrapper = document.createElement('div');
-                    wrapper.className = 'code-wrapper';
-                    preBlock.parentNode.insertBefore(wrapper, preBlock);
-                    wrapper.appendChild(preBlock);
-                    
-                    var codeEl = preBlock.querySelector('code');
-                    if (codeEl) {
-                        hljs.highlightElement(codeEl);
-                    }
-                    
-                    var btn = document.createElement('button');
-                    btn.className = 'copy-code-btn';
-                    btn.innerHTML = '<i class="fa-regular fa-copy"></i> Copy';
-                    
-                    btn.addEventListener('click', function() {
-                        var code = codeEl ? codeEl.innerText : preBlock.innerText;
-                        navigator.clipboard.writeText(code).then(function() {
-                            btn.innerHTML = '<i class="fa-solid fa-check"></i> Copied!';
-                            setTimeout(function() { 
-                                btn.innerHTML = '<i class="fa-regular fa-copy"></i> Copy'; 
-                            }, 2000);
-                        });
+                var codeEl = preBlock.querySelector('code');
+                if (codeEl) {
+                    hljs.highlightElement(codeEl);
+                }
+                
+                var btn = document.createElement('button');
+                btn.className = 'copy-code-btn';
+                btn.innerHTML = '<i class="fa-regular fa-copy"></i> Copy';
+                
+                btn.addEventListener('click', function() {
+                    var code = codeEl ? codeEl.innerText : preBlock.innerText;
+                    navigator.clipboard.writeText(code).then(function() {
+                        btn.innerHTML = '<i class="fa-solid fa-check"></i> Copied!';
+                        setTimeout(function() { 
+                            btn.innerHTML = '<i class="fa-regular fa-copy"></i> Copy'; 
+                        }, 2000);
                     });
-                    
-                    wrapper.appendChild(btn);
                 });
-            }
+                
+                wrapper.appendChild(btn);
+            });
+
+            // Open external links in new window
+            el.querySelectorAll('a').forEach(function(link) {
+                if (link.hostname && link.hostname !== window.location.hostname) {
+                    link.target = '_blank';
+                    link.rel = 'noopener noreferrer';
+                }
+            });
+
+            delete el.dataset.md;
+        }
+    }
+
+    function processMarkdownBlocks(selector) {
+        if (!window.IntersectionObserver) {
+            document.querySelectorAll(selector).forEach(processSingleBlock);
+            return;
+        }
+
+        var observer = new IntersectionObserver(function(entries, observer) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    processSingleBlock(entry.target);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { rootMargin: '300px' });
+
+        document.querySelectorAll(selector).forEach(function(el) {
+            observer.observe(el);
         });
     }
 
