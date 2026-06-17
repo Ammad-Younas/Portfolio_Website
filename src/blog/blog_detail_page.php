@@ -84,6 +84,9 @@ get_header();
 ?>
 <!-- Include Marked.js for markdown rendering -->
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<!-- Include highlight.js for code highlighting -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css" id="highlight-theme">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
 
 <style>
 /* Custom styling for markdown content inside the blog */
@@ -113,11 +116,12 @@ get_header();
 }
 .blog-content pre {
     background-color: #1e1e1e;
-    padding: 1rem;
+    padding: 2.5rem 1rem 1rem 1rem; /* Extra top padding for copy button */
     border-radius: 8px;
     overflow-x: auto;
     border: 1px solid rgba(128,128,128,0.2);
     margin-bottom: 1.5rem;
+    position: relative;
 }
 .blog-content code {
     background-color: rgba(255,255,255,0.1);
@@ -130,7 +134,7 @@ get_header();
 .blog-content pre code {
     background-color: transparent;
     padding: 0;
-    color: #e0e0e0;
+    color: inherit;
 }
 .blog-content blockquote {
     border-left: 4px solid var(--color-red, #e50914);
@@ -151,6 +155,58 @@ get_header();
     height: auto;
     border-radius: 8px;
     margin: 1.5rem 0;
+}
+
+/* Light mode overrides for blog content */
+body.light-mode .blog-content { color: #333333; }
+body.light-mode .blog-content h1, 
+body.light-mode .blog-content h2, 
+body.light-mode .blog-content h3, 
+body.light-mode .blog-content h4 { color: #1a1a1a; }
+body.light-mode .blog-content h2 { border-bottom: 1px solid rgba(0,0,0,0.1); }
+body.light-mode .blog-content pre { 
+    background-color: #f8f9fa; 
+    border: 1px solid rgba(0,0,0,0.1); 
+}
+body.light-mode .blog-content code { 
+    background-color: rgba(0,0,0,0.05); 
+    color: var(--color-red, #e50914); 
+}
+body.light-mode .blog-content pre code { color: #333333; }
+body.light-mode .blog-content blockquote { color: #666666; }
+
+/* Copy Code Button */
+.code-wrapper {
+    position: relative;
+}
+.copy-code-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: #e0e0e0;
+    padding: 5px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: all 0.3s ease;
+    z-index: 5;
+}
+.copy-code-btn:hover {
+    background: var(--color-orange);
+    color: #fff;
+    border-color: var(--color-orange);
+}
+body.light-mode .copy-code-btn {
+    background: rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.1);
+    color: #333;
+}
+body.light-mode .copy-code-btn:hover {
+    background: var(--color-orange);
+    color: #fff;
+    border-color: var(--color-orange);
 }
 </style>
 
@@ -236,23 +292,75 @@ get_header();
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-    // Render Q&A answers
-    document.querySelectorAll('.qna-answer').forEach(function(el) {
-        if(el.dataset.md) {
-            var rawMd = decodeURIComponent(escape(window.atob(el.dataset.md)));
-            el.innerHTML = marked.parse(rawMd);
-            el.classList.add('blog-content'); // Apply custom styles
+    // Configure marked to use highlight.js
+    marked.setOptions({
+        highlight: function(code, lang) {
+            if (lang && hljs.getLanguage(lang)) {
+                return hljs.highlight(code, { language: lang }).value;
+            }
+            return hljs.highlightAuto(code).value;
         }
     });
 
-    // Render fallback body if no Q&A
-    document.querySelectorAll('.blog-fallback-body').forEach(function(el) {
-        if(el.dataset.md) {
-            var rawMd = decodeURIComponent(escape(window.atob(el.dataset.md)));
-            el.innerHTML = marked.parse(rawMd);
-            el.classList.add('blog-content');
-        }
+    // Helper to process markdown blocks and add copy buttons
+    function processMarkdownBlocks(selector) {
+        document.querySelectorAll(selector).forEach(function(el) {
+            if(el.dataset.md) {
+                var rawMd = decodeURIComponent(escape(window.atob(el.dataset.md)));
+                el.innerHTML = marked.parse(rawMd);
+                el.classList.add('blog-content'); // Apply custom styles
+                
+                // Add copy buttons to all pre blocks
+                el.querySelectorAll('pre').forEach(function(preBlock) {
+                    var wrapper = document.createElement('div');
+                    wrapper.className = 'code-wrapper';
+                    preBlock.parentNode.insertBefore(wrapper, preBlock);
+                    wrapper.appendChild(preBlock);
+                    
+                    var btn = document.createElement('button');
+                    btn.className = 'copy-code-btn';
+                    btn.innerHTML = '<i class="fa-regular fa-copy"></i> Copy';
+                    
+                    btn.addEventListener('click', function() {
+                        var code = preBlock.querySelector('code') ? preBlock.querySelector('code').innerText : preBlock.innerText;
+                        navigator.clipboard.writeText(code).then(function() {
+                            btn.innerHTML = '<i class="fa-solid fa-check"></i> Copied!';
+                            setTimeout(function() { 
+                                btn.innerHTML = '<i class="fa-regular fa-copy"></i> Copy'; 
+                            }, 2000);
+                        });
+                    });
+                    
+                    wrapper.appendChild(btn);
+                });
+            }
+        });
+    }
+
+    // Render Q&A and fallback blocks
+    processMarkdownBlocks('.qna-answer');
+    processMarkdownBlocks('.blog-fallback-body');
+    
+    // Toggle highlight theme based on light/dark mode
+    var observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+            if (mutation.attributeName === "class") {
+                var isLight = document.body.classList.contains('light-mode');
+                var themeLink = document.getElementById('highlight-theme');
+                if (isLight) {
+                    themeLink.href = 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css';
+                } else {
+                    themeLink.href = 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css';
+                }
+            }
+        });
     });
+    observer.observe(document.body, { attributes: true });
+    
+    // Initialize correct highlight theme on load
+    if (document.body.classList.contains('light-mode')) {
+        document.getElementById('highlight-theme').href = 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css';
+    }
 });
 </script>
 
