@@ -35,6 +35,7 @@
                         <li><a href="<?php echo esc_url( home_url( '/#journey' ) ); ?>">Journey</a></li>
                         <li><a href="<?php echo esc_url( home_url( '/#skills' ) ); ?>">Skills</a></li>
                         <li><a href="<?php echo esc_url( home_url( '/#projects' ) ); ?>">Projects</a></li>
+                        <li><a href="<?php echo esc_url( home_url( '/src/blog/blog_list_page.php' ) ); ?>">Blog</a></li>
                         <li>
                             <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Light/Dark Mode" style="background: none; border: none; font-size: 1.2rem; cursor: pointer; transition: color 0.3s; padding: 0;">
                                 <i class="fa-solid fa-sun"></i>
