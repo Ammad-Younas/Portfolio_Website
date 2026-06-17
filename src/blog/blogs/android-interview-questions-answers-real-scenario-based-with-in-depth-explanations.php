@@ -719,7 +719,7 @@ body.light-mode .copy-code-btn:hover {
         
         <!-- Back button -->
         <div style="position: absolute; top: 120px; left: 40px; z-index: 10;">
-            <a href="<?php echo esc_url(home_url('/src/blog/blog')); ?>" class="btn-cert-small blog-back-btn" style="display: inline-block;"><i class="fa-solid fa-arrow-left"></i> Back to Blogs</a>
+            <a href="<?php echo esc_url(home_url('/src/blog/blog.php')); ?>" class="btn-cert-small blog-back-btn" style="display: inline-block;"><i class="fa-solid fa-arrow-left"></i> Back to Blogs</a>
         </div>
 
         <div class="container" style="max-width: 900px;">
