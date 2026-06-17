@@ -165,14 +165,19 @@ body.light-mode .blog-content h3,
 body.light-mode .blog-content h4 { color: #1a1a1a; }
 body.light-mode .blog-content h2 { border-bottom: 1px solid rgba(0,0,0,0.1); }
 body.light-mode .blog-content pre { 
-    background-color: #f8f9fa; 
-    border: 1px solid rgba(0,0,0,0.1); 
+    background-color: #eef2f5 !important; /* More distinct background for code blocks */
+    border: 1px solid rgba(0,0,0,0.15); 
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);
 }
 body.light-mode .blog-content code { 
-    background-color: rgba(0,0,0,0.05); 
+    background-color: rgba(0,0,0,0.06); 
     color: var(--color-red, #e50914); 
 }
-body.light-mode .blog-content pre code { color: #333333; }
+body.light-mode .blog-content pre code,
+body.light-mode .blog-content pre code.hljs { 
+    background-color: transparent !important;
+    color: #24292e; 
+}
 body.light-mode .blog-content blockquote { color: #666666; }
 
 /* Copy Code Button */
@@ -292,16 +297,6 @@ body.light-mode .copy-code-btn:hover {
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-    // Configure marked to use highlight.js
-    marked.setOptions({
-        highlight: function(code, lang) {
-            if (lang && hljs.getLanguage(lang)) {
-                return hljs.highlight(code, { language: lang }).value;
-            }
-            return hljs.highlightAuto(code).value;
-        }
-    });
-
     // Helper to process markdown blocks and add copy buttons
     function processMarkdownBlocks(selector) {
         document.querySelectorAll(selector).forEach(function(el) {
@@ -310,19 +305,24 @@ document.addEventListener("DOMContentLoaded", function() {
                 el.innerHTML = marked.parse(rawMd);
                 el.classList.add('blog-content'); // Apply custom styles
                 
-                // Add copy buttons to all pre blocks
+                // Add copy buttons and highlight to all pre blocks
                 el.querySelectorAll('pre').forEach(function(preBlock) {
                     var wrapper = document.createElement('div');
                     wrapper.className = 'code-wrapper';
                     preBlock.parentNode.insertBefore(wrapper, preBlock);
                     wrapper.appendChild(preBlock);
                     
+                    var codeEl = preBlock.querySelector('code');
+                    if (codeEl) {
+                        hljs.highlightElement(codeEl);
+                    }
+                    
                     var btn = document.createElement('button');
                     btn.className = 'copy-code-btn';
                     btn.innerHTML = '<i class="fa-regular fa-copy"></i> Copy';
                     
                     btn.addEventListener('click', function() {
-                        var code = preBlock.querySelector('code') ? preBlock.querySelector('code').innerText : preBlock.innerText;
+                        var code = codeEl ? codeEl.innerText : preBlock.innerText;
                         navigator.clipboard.writeText(code).then(function() {
                             btn.innerHTML = '<i class="fa-solid fa-check"></i> Copied!';
                             setTimeout(function() { 
