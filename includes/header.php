@@ -7,6 +7,15 @@
 	<link rel="icon" href="<?php echo esc_url( home_url( '/assets/images/favicon.png' ) ); ?>?v=<?php echo filemtime( get_template_directory() . '/assets/images/favicon.png' ); ?>" type="image/png">
 
 	<title><?php echo isset($page_title) ? htmlspecialchars($page_title) . ' | MADI Wist' : 'MADI Wist - Android & Python Developer'; ?></title>
+	<meta property="og:site_name" content="MADI Wist">
+	<script type="application/ld+json">
+	{
+	  "@context" : "https://schema.org",
+	  "@type" : "WebSite",
+	  "name" : "MADI Wist",
+	  "url" : "<?php echo esc_url( home_url( '/' ) ); ?>"
+	}
+	</script>
 	<?php wp_head(); ?>
 </head>
 
