@@ -9,12 +9,55 @@
 	<title><?php echo isset($page_title) ? htmlspecialchars($page_title) . ' | MADI Wist' : 'MADI Wist - Android & Python Developer'; ?></title>
 	<meta property="og:site_name" content="MADI Wist">
 	<script type="application/ld+json">
-	{
-	  "@context" : "https://schema.org",
-	  "@type" : "WebSite",
-	  "name" : "MADI Wist",
-	  "url" : "<?php echo esc_url( home_url( '/' ) ); ?>"
-	}
+	[
+		{
+			"@context" : "https://schema.org",
+			"@type" : "WebSite",
+			"name" : "MADI Wist",
+			"url" : "<?php echo esc_url( home_url( '/' ) ); ?>"
+		},
+		{
+			"@context": "https://schema.org",
+			"@type": "ItemList",
+			"itemListElement": [
+				{
+					"@type": "SiteNavigationElement",
+					"position": 1,
+					"name": "Home",
+					"description": "Welcome to MADI Wist - Android & Python Developer Portfolio.",
+					"url": "<?php echo esc_url( home_url( '/' ) ); ?>"
+				},
+				{
+					"@type": "SiteNavigationElement",
+					"position": 2,
+					"name": "About",
+					"description": "Learn more about MADI Wist, an aspiring Android and Python Developer.",
+					"url": "<?php echo esc_url( home_url( '/#about' ) ); ?>"
+				},
+				{
+					"@type": "SiteNavigationElement",
+					"position": 3,
+					"name": "Projects",
+					"description": "Explore my portfolio of Android and Python projects.",
+					"url": "<?php echo esc_url( home_url( '/#projects' ) ); ?>"
+				},
+				{
+					"@type": "SiteNavigationElement",
+					"position": 4,
+					"name": "Blog",
+					"description": "Read my latest articles and tutorials on software development.",
+					"url": "<?php echo esc_url( home_url( '/src/blogs/blogs' ) ); ?>"
+				},
+				{
+					"@type": "SiteNavigationElement",
+					"position": 5,
+					"name": "Skills",
+					"description": "Discover the programming languages and tools I specialize in.",
+					"url": "<?php echo esc_url( home_url( '/#skills' ) ); ?>"
+				}
+			]
+		}
+	]
 	</script>
 	<?php wp_head(); ?>
 </head>
