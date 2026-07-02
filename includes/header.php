@@ -14,6 +14,7 @@
 			"@context" : "https://schema.org",
 			"@type" : "WebSite",
 			"name" : "MADI Wist",
+			"alternateName" : ["MADIWist", "MADI Wist"],
 			"url" : "<?php echo esc_url( home_url( '/' ) ); ?>"
 		},
 		{
