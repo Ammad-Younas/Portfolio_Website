@@ -23,7 +23,7 @@
                 <h3 class="footer-title">Contact Info</h3>
                 <ul class="footer-contact">
                     <li><i class="fa-solid fa-location-dot"></i> Sargodha, Punjab, Pakistan</li>
-                    <li><i class="fa-solid fa-phone"></i> <a href="tel:+923017047024" style="color: inherit; text-decoration: none;">+923017047024</a></li>
+                    <li><i class="fa-solid fa-phone"></i> <a href="tel:+923370798771" style="color: inherit; text-decoration: none;">+92 337 0798771</a></li>
                     <li><i class="fa-solid fa-envelope"></i> <a href="mailto:ammadyounas.tech@gmail.com" style="color: inherit; text-decoration: none;">ammadyounas.tech@gmail.com</a></li>
                 </ul>
             </div>

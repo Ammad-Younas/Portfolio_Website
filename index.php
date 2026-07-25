@@ -406,7 +406,7 @@ get_header();
                             <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
                             <div class="contact-details">
                                 <h4>Phone</h4>
-                                <a href="tel:+923017047024">+92 301 7047024</a>
+                                <a href="tel:+923370798771">+92 337 0798771</a>
                             </div>
                         </div>
                         <div class="contact-item">
